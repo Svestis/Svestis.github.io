@@ -1,0 +1,113 @@
+.container{
+	padding: 0.1rem;
+}
+
+.icons{
+	font-size: 1.5rem;
+}
+
+.icons a{
+	margin-right: 0.2rem;
+}
+
+.hero-body {
+	background-color: #0072BC;
+}
+
+hr.rounded {
+  border-top: 2px solid #bbb;
+  border-radius: 5px;
+}
+
+.margin {
+	margin-bottom: 0.1rem;
+}
+
+.center-image {
+	display:  block;
+	margin-left:  auto;
+	margin-rgiht:  auto;
+}
+
+
+.title{
+	color: #0072BC;
+}
+
+.cust-p {
+	color: #0072BC;
+}
+
+.custom-br {
+	line-height: 1px;
+}
+
+.ftr:hover {
+	color: #0072BC;
+}
+
+.zoom-icon {
+	transition: transform .2s;
+}
+
+.zoom-icon:hover{
+	transform: scale(1.3);
+}
+
+.zoom-card {
+	transition: transform .4s;
+}
+
+.zoom-card:hover{
+	transform: scale(1.05);
+}
+
+.zoom-pic {
+	transition: transform .4s;
+}
+
+.zoom-pic:hover{
+	transform: scale(1.05);
+}
+
+.hover-txt:hover {
+	font-weight: bold;
+	color: #0072BC;
+}
+
+
+.glance {
+	height: 90%;
+}
+
+.ftrd {
+	height: 100%;
+}
+
+.mi {
+	height:  100%;
+}
+
+.div-temp {
+	display: flex;
+	justify-content: center;
+}
+
+.footer{
+	background-color:#fafafa;
+	padding:1.5rem 1.5rem 1.5rem}
+
+.dsbld {
+	color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.current {
+
+}
+
+.current-time {
+	color: #00b398;
+}
