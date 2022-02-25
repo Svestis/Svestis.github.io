@@ -111,3 +111,44 @@ hr.rounded {
 .current-time {
 	color: #00b398;
 }
+
+.gr {
+	filter: grayscale(100%);
+	transition:  0.4s;
+}
+
+.gr:hover {
+	filter: grayscale(0);
+}
+
+.a {
+	color: white;
+}
+
+.nav-main {
+	color: white;
+	font-weight: bold;
+}
+
+.nav-color, .nav-cont {
+	background-color: #0072BC;
+	font-weight: bold;
+	border-top:  none;
+}
+
+
+
+.nav-color:hover {
+	background-color: #0072BC;
+	color: white;
+	font-weight: bold;
+	border-top:  none;
+}
+
+.curr-nav {
+	color: #0072BC;
+	background-color: #fafafa;
+	pointer-events: none;
+	font-weight: bold;
+}
+
