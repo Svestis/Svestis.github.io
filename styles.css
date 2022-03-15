@@ -1,3 +1,27 @@
+figure .cust-img{
+	max-height: 40%;
+	max-width: 40%;
+	diplsay: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure .cust-img2{
+	max-height: 70%;
+	max-width: 70%;
+	diplsay: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-link > p {
+	color:  white;
+}
+
+.navbar-link > p.curr-nav {
+	color: #0072BC;
+}
+
 .container{
 	padding: 0.1rem;
 }
@@ -10,8 +34,12 @@
 	margin-right: 0.2rem;
 }
 
-.hero-body {
+.hero-body, .navbar, .navbar-menu, .navbar-start, .navbar-dropdown, .navbar-item.has-dropdown, .navbar-link, .navbar-dropdown > .navbar-item {
 	background-color: #0072BC;
+}
+
+.navbar-menu {
+	padding-left:  5rem;
 }
 
 hr.rounded {
@@ -30,7 +58,7 @@ hr.rounded {
 }
 
 
-.title{
+.title, .card-header-title{
 	color: #0072BC;
 }
 
@@ -46,46 +74,9 @@ hr.rounded {
 	color: #0072BC;
 }
 
-.zoom-icon {
-	transition: transform .2s;
-}
-
-.zoom-icon:hover{
-	transform: scale(1.3);
-}
-
-.zoom-card {
-	transition: transform .4s;
-}
-
-.zoom-card:hover{
-	transform: scale(1.05);
-}
-
-.zoom-pic {
-	transition: transform .4s;
-}
-
-.zoom-pic:hover{
-	transform: scale(1.05);
-}
-
 .hover-txt:hover {
 	font-weight: bold;
 	color: #0072BC;
-}
-
-
-.glance {
-	height: 90%;
-}
-
-.ftrd {
-	height: 100%;
-}
-
-.mi {
-	height:  100%;
 }
 
 .div-temp {
@@ -104,43 +95,75 @@ hr.rounded {
   text-decoration: none;
 }
 
-.current {
-
-}
-
 .current-time {
 	color: #00b398;
 }
 
-.gr {
+@media all and (min-width:1025px){
+	.gr {
 	filter: grayscale(100%);
-	transition:  0.4s;
+	transition:  0.4s;}
+
+	.zoom-icon {
+	transition: transform .2s;}
+
+	.zoom-icon:hover{
+		transform: scale(1.3);}
+
+	.zoom-card {
+		transition: transform .4s;}
+
+	.zoom-card:hover{
+		transform: scale(1.05);}
+
+	.zoom-pic {
+		transition: transform .4s;}
+
+	.zoom-pic:hover{
+		transform: scale(1.05);}
+
+	.gr:hover {
+		filter: grayscale(0);}
+
+	.mov-nab {
+		display: none;
+	}
+
+	.glance {
+	height: 90%;}
+
+	.ftrd {
+		height: 100%;}
+
+	.mi {
+		height:  100%;}
+
+	.mobile {
+		display: none;
+	}
 }
 
-.gr:hover {
-	filter: grayscale(0);
+@media all and (max-width:1024px){
+
+	.pc {
+		display: none;
+	}
+
+	.container {
+		padding-left: 3;
+	}
+
+	.mobile {
+		align-items: flex-start;
+		float: left;
+	}
 }
 
-.a {
+.a{
 	color: white;
 }
 
-.nav-main {
-	color: white;
-	font-weight: bold;
-}
-
-.nav-color, .nav-cont {
-	background-color: #0072BC;
-	font-weight: bold;
-	border-top:  none;
-}
-
-
-
-.nav-color:hover {
-	background-color: #0072BC;
-	color: white;
+.nav-color, .nav-cont, .navbar-item {
 	font-weight: bold;
 	border-top:  none;
 }

@@ -19,41 +19,69 @@ For quite some time I was wondering “How could I combine both of them?” Then
       <meta property="og:type" content="profile">
       <link rel="shortcut icon" href="https://img.icons8.com/small/344/user-male-circle.png">
    </head>
-  <section class="hero is-info">
+ <section class="hero is-info">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+  
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item"  rel="noopener noreferrer" href="index.html">
+        <p>Overview</p>
+      </a>
+
+      <a class="navbar-item curr-nav" rel="noopener noreferrer" href="work_experience.html">
+        <p class="curr-nav">Work & Volunteer Experience</p>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          <p>MSc in Data Science</p>
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item"  rel="noopener noreferrer" href="msc.html">
+            General
+          </a>
+<!--           <a class="navbar-item">
+            Jobs
+          </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a> -->
+        </div>
+      </div>
+
+       <a class="navbar-item" rel="noopener noreferrer" href="bsc.html">
+        BSc in Informatics (Computer Science)
+      </a>
+
+      <a class="navbar-item" rel="noopener noreferrer" href="other.html">
+        Other
+      </a>
+    </div>
+  </div>
+</nav>
       <div class="hero-body">
-         <div class="container">
             <div class="container has-text-left">
                <p class="title is-2">
                   Panagiotis Koilakos
                </p>
                <div class="columns">
                   <div class="column is-two-thirds">
-                  <p id ="header-subtitle" class="subtitle is-4">Senior Data Management Assistant, UNHCR</p>
-               </div>
-                  <nav class="navbar is-transparent column is-narrow" role="navigation" arial-label="dropdown navigation">
-            <div class="navbar-item has-dropdown is-boxed is-hoverable">
-               <a class="navbar-link nav-main is-arrowless">
-                  <p class="nav-main">Navigation</p>
-               </a>
-               <div class="navbar-dropdown nav-cont">
-                  <a class="navbar-item nav-color" href="./index.html" rel="noopener noreferrer">
-                     <p class="nav-color">Overview</p>
-                  </a>
-                  <a class="navbar-item curr-nav" rel="noopener noreferrer">
-                     <p class="curr-nav">Work & Volunteer Experience</p>
-                  </a>
-                  <a class="navbar-item nav-color" href="./msc.html" rel="noopener noreferrer">
-                     <p class="nav-color">MSc in Data Science</p>
-                  </a>
-                   <a class="navbar-item nav-color" href="./bsc.html" rel="noopener noreferrer">
-                     <p class="nav-color">BSc in Informatics (Computer Science)</p>
-                  </a>
-                  <a class="navbar-item nav-color" href="./other.html" rel="noopener noreferrer">
-                     <p class="nav-color">Other</p>
-                  </a>
-               </div>
-            </div>
-         </nav>
+                     <p id ="header-subtitle" class="subtitle is-4">Senior Data Management Assistant, UNHCR</p>
+                  </div>
                </div>
                <div class="icons">
                   <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
@@ -64,18 +92,19 @@ For quite some time I was wondering “How could I combine both of them?” Then
                   </a>
                   <a class="icon" target="_blank" href="https://medium.com/@panoscs" rel="noopener noreferrer">
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white" class="zoom-icon">
-                     <path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
+                        <path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/>
+                     </svg>
                   </a>
                   <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
                   <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
                   </a>
                </div>
             </div>
-         </div>
       </div>
    </section>
    <br>
    <section class="container">
+      <h1 class="title is-2">Work & Voluteer Experience</h1>
      <h2 class="title">Work Experience</h2>
     
 

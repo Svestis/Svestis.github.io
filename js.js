@@ -73,43 +73,69 @@ var chart = new Chart(canvasElement, config);
 
 // Line graph Main Page
 
-var canvasElement2 = document.getElementById("chart-cont2").getContext('2d');
+// var canvasElement2 = document.getElementById("chart-cont2").getContext('2d');
 
-years = years()
+// years = years()
 
-var config2 = {
-  type: "line",
-  data: {
-    labels: years,
-    datasets: [{
-      label: "My first dataset",
-      data: [10, 20, 30, 40, 50, 60, 70, 80, 90],
-      fill: false,
-      borderColor: 'rgb(75, 192, 192)',
-      tension: 0.1
-    }]
-  },
-   plugins: [ChartDataLabels],
-  options: {
-    gridlines: {
-      display:false,
-    },
-    scales: {
-      yAxis: {
-        display: false,
-        ticks: {
-          display: false,
-        },
-      },
-    },
-    plugins: {
-      subtitle: {
-        display: true,
-        text: 'learning curve',
-        padding: 10
-      },
-    },
+// var config2 = {
+//   type: "line",
+//   data: {
+//     labels: years,
+//     datasets: [{
+//       label: "My first dataset",
+//       data: [10, 20, 30, 40, 50, 60, 70, 80, 90],
+//       fill: false,
+//       borderColor: 'rgb(75, 192, 192)',
+//       tension: 0.1
+//     }]
+//   },
+//    plugins: [ChartDataLabels],
+//   options: {
+//     gridlines: {
+//       display:false,
+//     },
+//     scales: {
+//       yAxis: {
+//         display: false,
+//         ticks: {
+//           display: false,
+//         },
+//       },
+//     },
+//     plugins: {
+//       subtitle: {
+//         display: true,
+//         text: 'learning curve',
+//         padding: 10
+//       },
+//     },
+//   }
+// };
+
+// var chart2 = new Chart(canvasElement2, config2);
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
   }
-};
 
-var chart2 = new Chart(canvasElement2, config2);
+});
