@@ -1,6 +1,6 @@
 function monthDiff(d) {
     var months;
-    var today = new Date;
+    var today = new Date();
     months = (today.getFullYear() - d.getFullYear()) * 12;
     months -= d.getMonth();
     months += today.getMonth();
@@ -53,11 +53,6 @@ var config = {
                     display: false,
                 },
             },
-            xAxis: {
-                ticks: {
-                    fontSize: 40
-                }
-            }
         },
         plugins: {
             subtitle: {
@@ -70,49 +65,6 @@ var config = {
 };
 
 var chart = new Chart(canvasElement, config);
-
-// Line graph Main Page
-
-// var canvasElement2 = document.getElementById("chart-cont2").getContext('2d');
-
-// years = years()
-
-// var config2 = {
-//   type: "line",
-//   data: {
-//     labels: years,
-//     datasets: [{
-//       label: "My first dataset",
-//       data: [10, 20, 30, 40, 50, 60, 70, 80, 90],
-//       fill: false,
-//       borderColor: 'rgb(75, 192, 192)',
-//       tension: 0.1
-//     }]
-//   },
-//    plugins: [ChartDataLabels],
-//   options: {
-//     gridlines: {
-//       display:false,
-//     },
-//     scales: {
-//       yAxis: {
-//         display: false,
-//         ticks: {
-//           display: false,
-//         },
-//       },
-//     },
-//     plugins: {
-//       subtitle: {
-//         display: true,
-//         text: 'learning curve',
-//         padding: 10
-//       },
-//     },
-//   }
-// };
-
-// var chart2 = new Chart(canvasElement2, config2);
 
 document.addEventListener('DOMContentLoaded', () => {
 

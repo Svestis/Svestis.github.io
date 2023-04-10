@@ -1,15 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
    <head>
+      <meta charset="utf-8">
       <title>Panagiotis Koilakos - MSc in Data Science - Numerical Analysis</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="../styles.css"  />
+      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-      <script type='text/javascript' src="../js.js" defer></script>
-      <meta charset="utf-8"/>
+      <script src="./js.js" defer></script>
       <meta name="description" property="og:description" content="Since a young boy, I had a passion to help people and chose to volunteer in order to support the people of this world, local communities, and the environment. Then studies in Informatics came along the way.
          For quite some time I was wondering “How could I combine both of them?” Then it clicked! Working as a Senior Data Management Assistant at UNHCR made sense. So here I am, fulfilling my two passions by supporting the people that were forced to flee by using my experience in Informatics.">
       <meta name="keywords" content="Portfolio, ePortfolio, Data Vizualization, Data Management, Data Science, Computer Science, Informatics, CV, Python, SQL">
@@ -18,189 +20,163 @@
       <meta property="og:type" content="profile">
       <link rel="shortcut icon" href="https://img.icons8.com/small/344/user-male-circle.png">
    </head>
-   <section class="hero is-info">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-         <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            </a>
-         </div>
-         <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-               <a class="navbar-item"  rel="noopener noreferrer" href="../index.html">
-                  <p>Overview</p>
-               </a>
-               <a class="navbar-item" rel="noopener noreferrer" href="../work_experience.html">
-                  <p>Work & Volunteer Experience</p>
-               </a>
-               <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link curr-nav">
-                     <p class="curr-nav">MSc in Data Science</p>
+   <body>
+      <div>
+         <nav>
+            <ul class="nav nav-pills sticky-top justify-content-left">
+               <li class="nav-item">
+                  <a class="nav-link px-2" href="../index.html">Overview</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../work_experience.html">Work & Volunteer Experience</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MSc in Data Science
                   </a>
-                  <div class="navbar-dropdown">
-                     <a class="navbar-item"  rel="noopener noreferrer" href="../msc.html">
-                        <p>General</p>
-                     </a>
-                     <a class="navbar-item" rel="noopener noreferrer" href="mod1.html">
-                        <p>The Data Professional</p>
-                     </a>
-                     <a class="navbar-item curr-nav" rel="noopener noreferrer" href="msc_html/mod2.html">
-                        <p>Numerical Analysis</p>
-                     </a>
-                     <!--           <a class="navbar-item">
-                        Jobs
-                        </a>
-                        <a class="navbar-item">
-                        Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                        Report an issue
-                        </a> -->
+                  <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="../msc.html">General</a></li>
+                     <li>
+                        <hr class="dropdown-divider">
+                     </li>
+                     <li><a class="dropdown-item" href="mod1.html">The Data Professional</a></li>
+                     <li><a class="dropdown-item active" aria-current="page" href="#">Numerical Analysis</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../bsc.html">BSc in Informatics (Computer Science)</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../other.html">Other</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="heading">
+            <div class="container">
+               <h1 class="text-body-emphasis">Panagiotis Koilakos</h1>
+               <p class="lead">
+                  Associate Operational Data Management Officer, UNHCR
+               </p>
+               <div class="icons">
+                  <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
+                  <i class="fab fa-github zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
+                  <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h1 class="mt-4 mb-4">MSc in Data Science - Numerical Analysis</h1>
+      <h2 class="mt-4 mb-4">In general</h2>
+      <div class="accordion mx-3 mb-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button  id="contents" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               Contents
+               </button>
+            </h2>
+            <div  id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">
+                  1. <a href="#refl" rel="noopener noreferrer" class="hover-txt no-decor">Individual Reflection</a><br>
+                  2. <a href="#datarepo" rel="noopener noreferrer" class="hover-txt no-decor">Data Activity Repo</a><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h2 class="mt-4 mb-4" id="refl">Individual Reflection</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <p class="card-text">&emsp;Mathematics and statistics are closely related to data science. Even though data science is generally considered a relatively new discipline, traditional mathematics and statistics have a direct application and provide robust foundations for applying data science concepts (Hardin & Horton, 2017). An extension of data science is also the related statistics and data science softwares, such as the R language. All the above have been studied during the 12-unit module of Numerical Analysis.<br><br>
+   
+   
+                        &emsp;Due to my background in Computer Science with a specialization in knowledge extraction and information systems, the concepts of numerical analysis, statistics, and the use of R language were not new to me, albeit I lacked practical knowledge, which is one of the fundamental pillars of the learning process (Reynolds et al., 2004). Simple R functions, such as import, export and basic mathematical computations, were easy to be performed. Moving to more complex concepts such as creating plots, performing hypothesis tests, and finding correlations and regressions challenged me intellectually and was one of the most important parts of this module. Weekly data activities have been very beneficial in practically applying theoretical knowledge.<br><br>
+                        
+                        
+                        &emsp;Due to its nature, this module did not allow collaboration between students; therefore, one's study and exercise were needed to benefit from the outcomes of the module. Apart from the theoretical study time that I had to undertake in order to renew my existing knowledge and understand more extensive statistics concepts in data science, weekly data activities were one of the highlights of this module. Exploring the data in order to understand the format, exploratory data analysis, descriptive and inferential statistics, as well as visually presenting the outcome are exercises that have been performed as per the data activities' needs. A GitHub repository has been created for the needs of the eportfolio, aiming to record and further share the knowledge I gained through this module. The repository, along with the two final deliverables of this module, will be included in the dedicated eportfolio page, which is currently under construction, aiming to engage my peers in active participation, which is one of the aims of an eportfolio (Roberts et al., 2016).<br><br>
+                        
+                        
+                        &emsp;As described above, several parts of practically applying knowledge challenged me intellectually. Having said that, the process of actively engaging with the content was far from easy. Due to my background, this module was confronted with fear, as mathematics (e.g. computational mathematics) is something I dislike and have had problems with since my pre-graduate education. The fear was succeeded by overconfidence as "Statistics in Computer Science" was one of the last modules of my bachelor's, which I passed with flying colours. This overconfidence did not allow me to engage appropriately with the content from the beginning. Even though emotions, while studying, are often neglected, I soon realized that either feeling would not help me learn and retain that knowledge (King et al., 2019). The decision to re-starting the whole module while the class was already going through Unit 5 was undoubtedly hard but beneficial. I had to force myself to go through all the relevant content of each unit, regardless of how confident I felt. <br><br>
+                        
+                        
+                        &emsp;Already from unit 2, I realized the importance of what I was doing, as apart from learning new things, the realization that you never know enough kicked in and helped me proceed to the rest of the units with better morale and soon catch up with the rest of the class. In addition, studying for the mid-term test brought back memories from my pre-graduate studies and the fact that this test concentrated on concepts that I enjoyed helped me to proceed further. Besides the work I had to do with myself to overcome the feelings that were negatively affecting my learning process, brief discussions with my peers made me realize that this feeling of "boredom" may come from exhaustion due to the long working hours (Martil et al., 2006). This, in connection with the time I had available to study, which was always after 10 p.m., severely impacted my mood. Changing the environment and studying time immensely helped the whole process, and I certainly feel better about myself after achieving much more than I thought I could during this module.<br><br>
+                        
+                        &emsp;When my emotions and responsibilities were set straight, I created an action plan for my studies, similar to the one I followed during my bachelor's degree. The goal per unit was to go through the description, read the mandatory readings and, if needed, some of the optional readings of the week, work on any non-graded assignments (for example, data activities) and finish the module with some notes, such as essential concepts or code that I found hard to write, and that I wanted to keep for further reference. The reading, thinking, acting and experiencing cycle I followed is similar to the "experiential learning cycle" (McCarthy, 2010). I found this method the most appropriate, as the module had to be as theoretical and practical, and practice could help me achieve the learning outcomes.<br><br>
+                     
+                        &emsp;Following the above, due to my current work, I started to try and put into production what I have learned in every unit of this module. My primary focus was on the null hypothesis, regression analysis, presenting five-figure summaries, and correlation analysis. Moreover, the more profound knowledge of R language has helped me on creating custom visuals in PowerBI to present my findings on "what has happened" (data intelligence) and "what is going to happen" (data science). The created dashboard became an asset for the office I am working in and is used daily in at least seven countries.<br><br>
+                     
+                        &emsp;All this process of treating the things that kept me back and later applying a systematic learning plan and gaining hand's on experience provided me with unique knowledge in both data science subjects and how to cope with psychological things that prevent personal, professional and academic development.<br>
+                     </p>
                   </div>
                </div>
-               <a class="navbar-item" rel="noopener noreferrer" href="../bsc.html">
-               BSc in Informatics (Computer Science)
-               </a>
-               <a class="navbar-item" rel="noopener noreferrer" href="../other.html">
-               Other
-               </a>
             </div>
          </div>
-      </nav>
-      <div class="hero-body">
-         <div class="container has-text-left">
-            <p class="title is-2">
-               Panagiotis Koilakos
-            </p>
-            <div class="columns">
-               <div class="column is-two-thirds">
-                  <p id ="header-subtitle" class="subtitle is-4">Associate Operation Data Management Officer, UNHCR</p>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <div class="accordion mx-3 mb-3 mt-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               References
+               </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion"> Hardin, J., Horton, N. (2017) Ensuring That Mathematics is Relevant in a World of Data Science. <i>American Mathematical Society</i> 64(9): 986-990. DOI:  <a target="_blank" href="http://dx.doi.org/10.1090/noti1572" rel="noopener noreferrer">http://dx.doi.org/10.1090/noti1572</a>.<br><br>
+   
+                  King, R., Chen, J. (2019) Emotions in Education: Asian Insights on the Role of Emotions in Learning and Teaching. <i>Asia-Pacific Edu Res</i> 28(4); 279-281. DOI: <a target="_blank" href="https://doi.org/10.1007/s40299-019-00469-x" rel="noopener noreferrer">https://doi.org/10.1007/s40299-019-00469-x</a>.<br><br>
+      
+                  Martin, M., Sadlo, G., Stew, G. (2006) The phenomenon of boredom. <i>Qualitative Research in Psychology</i> 3(6): 193-211. DOI: <a target="_blank" href="10.1191/1478088706qrp066oa" rel="noopener noreferrer">10.1191/1478088706qrp066oa</a>.<br><br>
+      
+                  McCarthy, M. (2010) Experiential Learning Theory: From Theory To Practice. <i>Journal of Business & Economics Research</i> 8(5): 131-140. Available from: <a target="_blank" href="https://www.clutejournals.com/index.php/JBER/article/view/725/710" rel="noopener noreferrer">https://www.clutejournals.com/index.php/JBER/article/view/725/710</a> [Accessed 3 September 2022].<br><br>
+      
+                  Reynolds, J., Caley, L., Mason, R. (2002) <i>How do people learn?.</i> London: Chartered Institute of Personnel and Development. <br><br>
+      
+      
+                  Roberts, P., Maor, D., Herrington, J. (2016) ePortfolio-Based Learning Environments: Recommendations for Effective Scaffolding of Reflective Thinking in Higher Education. <i>Education Technology & Society</i> 19(4): 22-33. Available from: <a target="_blank" href="https://www.jstor.org/stable/jeductechsoci.19.4.22" rel="noopener noreferrer">https://www.jstor.org/stable/jeductechsoci.19.4.22</a> [Accessed 5 September 2022].<br><br>
                </div>
             </div>
-            <div class="icons">
-               <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
-               <i class="fa fa fa-linkedin zoom-icon"></i>
-               </a>
-               <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
-               <i class="fa fa fa-github zoom-icon"></i>
-               </a>
-               <a class="icon" target="_blank" href="https://medium.com/@panoscs" rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white" class="zoom-icon">
-                     <path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/>
+         </div>
+      </div>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="datarepo">Data Activity Repo</h2>
+      <p>&emsp;The current module, apart from the theoretical part also included specific data activities which have been grouped under a Github repo.</p>
+      <div class="container-fluid justify-content-center text-center my-3">
+
+                  <div class="card zoom-card gr shadow-sm h-100 w-25 mx-auto">
+                     <div class="card-body">
+                        <h5 class="card-title">R-studio/R project for the Data Activities of the module</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Repository</h6>
+                        <p>Written in <i class="fab fa-r-project fa-beat"></i></p>
+                        <div>
+                           <figure class="image container" style="margin-top:10px">
+                              <img class="image" src="../assets/rstudio.png" width="200" >
+                           </figure>
+                        </div>
+                     </div>
+                     <div class="card-footer"><a class="no-decor" href="https://github.com/Svestis/MScDataScience_NumericalAnalysis" target="_blank" rel="noopener noreferrer">Project</a></div>
+                  </div>
+         </div>
+      </div>
+      <footer class="py-3 my-4">
+         <ul class="nav justify-content-center">
+            <li class="nav-item">
+               <a href="#" class="icon-link icon-link-hover"
+                  style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0);">
+                  Back to top
+                  <svg class="bi bi-arrow-up" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
                   </svg>
                </a>
-               <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
-               <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
-               </a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <br>
-   <section class="container">
-      <h2 class="title is-1">MSc in Data Science - Numerical Analysis</h2>
-      <h2 class="title" id="contents">In General</h2>
-      <p>Contents<br><br>
-         1. <a href="#reflection" rel="noopener noreferrer" class="hover-txt">Individual Reflection</a><br>
-         2. <a href="#data_activity" rel="noopener noreferrer" class="hover-txt">Data Activity Repo</a><br></p>
-         <br>
-         <h2 id="reflection" class="title">Individual Reflection</h2>
-         &emsp;Mathematics and statistics are closely related to data science. Even though data science is generally considered a relatively new discipline, traditional mathematics and statistics have a direct application and provide robust foundations for applying data science concepts (Hardin & Horton, 2017). An extension of data science is also the related statistics and data science softwares, such as the R language. All the above have been studied during the 12-unit module of Numerical Analysis.<br><br>
-   
-   
-   &emsp;Due to my background in Computer Science with a specialization in knowledge extraction and information systems, the concepts of numerical analysis, statistics, and the use of R language were not new to me, albeit I lacked practical knowledge, which is one of the fundamental pillars of the learning process (Reynolds et al., 2004). Simple R functions, such as import, export and basic mathematical computations, were easy to be performed. Moving to more complex concepts such as creating plots, performing hypothesis tests, and finding correlations and regressions challenged me intellectually and was one of the most important parts of this module. Weekly data activities have been very beneficial in practically applying theoretical knowledge.<br><br>
-   
-   
-   &emsp;Due to its nature, this module did not allow collaboration between students; therefore, one's study and exercise were needed to benefit from the outcomes of the module. Apart from the theoretical study time that I had to undertake in order to renew my existing knowledge and understand more extensive statistics concepts in data science, weekly data activities were one of the highlights of this module. Exploring the data in order to understand the format, exploratory data analysis, descriptive and inferential statistics, as well as visually presenting the outcome are exercises that have been performed as per the data activities' needs. A GitHub repository has been created for the needs of the eportfolio, aiming to record and further share the knowledge I gained through this module. The repository, along with the two final deliverables of this module, will be included in the dedicated eportfolio page, which is currently under construction, aiming to engage my peers in active participation, which is one of the aims of an eportfolio (Roberts et al., 2016).<br><br>
-   
-   
-   &emsp;As described above, several parts of practically applying knowledge challenged me intellectually. Having said that, the process of actively engaging with the content was far from easy. Due to my background, this module was confronted with fear, as mathematics (e.g. computational mathematics) is something I dislike and have had problems with since my pre-graduate education. The fear was succeeded by overconfidence as "Statistics in Computer Science" was one of the last modules of my bachelor's, which I passed with flying colours. This overconfidence did not allow me to engage appropriately with the content from the beginning. Even though emotions, while studying, are often neglected, I soon realized that either feeling would not help me learn and retain that knowledge (King et al., 2019). The decision to re-starting the whole module while the class was already going through Unit 5 was undoubtedly hard but beneficial. I had to force myself to go through all the relevant content of each unit, regardless of how confident I felt. <br><br>
-   
-   
-   &emsp;Already from unit 2, I realized the importance of what I was doing, as apart from learning new things, the realization that you never know enough kicked in and helped me proceed to the rest of the units with better morale and soon catch up with the rest of the class. In addition, studying for the mid-term test brought back memories from my pre-graduate studies and the fact that this test concentrated on concepts that I enjoyed helped me to proceed further. Besides the work I had to do with myself to overcome the feelings that were negatively affecting my learning process, brief discussions with my peers made me realize that this feeling of "boredom" may come from exhaustion due to the long working hours (Martil et al., 2006). This, in connection with the time I had available to study, which was always after 10 p.m., severely impacted my mood. Changing the environment and studying time immensely helped the whole process, and I certainly feel better about myself after achieving much more than I thought I could during this module.<br><br>
-   
-   &emsp;When my emotions and responsibilities were set straight, I created an action plan for my studies, similar to the one I followed during my bachelor's degree. The goal per unit was to go through the description, read the mandatory readings and, if needed, some of the optional readings of the week, work on any non-graded assignments (for example, data activities) and finish the module with some notes, such as essential concepts or code that I found hard to write, and that I wanted to keep for further reference. The reading, thinking, acting and experiencing cycle I followed is similar to the "experiential learning cycle" (McCarthy, 2010). I found this method the most appropriate, as the module had to be as theoretical and practical, and practice could help me achieve the learning outcomes.<br><br>
-
-   &emsp;Following the above, due to my current work, I started to try and put into production what I have learned in every unit of this module. My primary focus was on the null hypothesis, regression analysis, presenting five-figure summaries, and correlation analysis. Moreover, the more profound knowledge of R language has helped me on creating custom visuals in PowerBI to present my findings on "what has happened" (data intelligence) and "what is going to happen" (data science). The created dashboard became an asset for the office I am working in and is used daily in at least seven countries.<br><br>
-
-   &emsp;All this process of treating the things that kept me back and later applying a systematic learning plan and gaining hand's on experience provided me with unique knowledge in both data science subjects and how to cope with psychological things that prevent personal, professional and academic development.<br><br>
-   
-   <p id="back_to_contents"><a href="#contents" class="hover-txt">Back to page contents</a></p><br>
-   
-   <article class="message is-info">
-            <div class="message-header" onclick="this.parentElement.style.display='none'">
-               <b>References</b>
-               <button class="delete" aria-label="delete" ></button>
-            </div>
-            <div class="message-body">
-               Hardin, J., Horton, N. (2017) Ensuring That Mathematics is Relevant in a World of Data Science. <i>American Mathematical Society</i> 64(9): 986-990. DOI:  <a target="_blank" href="http://dx.doi.org/10.1090/noti1572" rel="noopener noreferrer">http://dx.doi.org/10.1090/noti1572</a>.<br><br>
-   
-               King, R., Chen, J. (2019) Emotions in Education: Asian Insights on the Role of Emotions in Learning and Teaching. <i>Asia-Pacific Edu Res</i> 28(4); 279-281. DOI: <a target="_blank" href="https://doi.org/10.1007/s40299-019-00469-x" rel="noopener noreferrer">https://doi.org/10.1007/s40299-019-00469-x</a>.<br><br>
-   
-               Martin, M., Sadlo, G., Stew, G. (2006) The phenomenon of boredom. <i>Qualitative Research in Psychology</i> 3(6): 193-211. DOI: <a target="_blank" href="10.1191/1478088706qrp066oa" rel="noopener noreferrer">10.1191/1478088706qrp066oa</a>.<br><br>
-   
-               McCarthy, M. (2010) Experiential Learning Theory: From Theory To Practice. <i>Journal of Business & Economics Research</i> 8(5): 131-140. Available from: <a target="_blank" href="https://www.clutejournals.com/index.php/JBER/article/view/725/710" rel="noopener noreferrer">https://www.clutejournals.com/index.php/JBER/article/view/725/710</a> [Accessed 3 September 2022].<br><br>
-   
-               Reynolds, J., Caley, L., Mason, R. (2002) <i>How do people learn?.</i> London: Chartered Institute of Personnel and Development. <br><br>
-   
-   
-               Roberts, P., Maor, D., Herrington, J. (2016) ePortfolio-Based Learning Environments: Recommendations for Effective Scaffolding of Reflective Thinking in Higher Education. <i>Education Technology & Society</i> 19(4): 22-33. Available from: <a target="_blank" href="https://www.jstor.org/stable/jeductechsoci.19.4.22" rel="noopener noreferrer">https://www.jstor.org/stable/jeductechsoci.19.4.22</a> [Accessed 5 September 2022].<br><br>
-            </div>
-         </article>
-      <br>
-      <h2 class="title" id="data_activity">Data Activity Repo</h2>
-      <p>
-
-&emsp;The current module, apart from the theoretical part also included specific data activities which have been grouped under a Github repo.
-<br><br>
-<section class="container">
-   <div class="columns is-multiline is-centered">
-   <div class="column is-one-third gr">
-      <div class="card zoom-card">
-         <p class="card-header-title">
-            Repo
-         </p>
-         <div class="card-content">
-            <div class="content">
-               R-studio/R project for the Data Activities of the module<br><br>
-               <span class="tag is-black is-medium"><b>R</b></span>
-            </div>
-            <div>
-               <figure class="image container" style="margin-top:10px">
-                  <img class="image" src="../assets/rstudio.png" width="100px" height="auto">
-               </figure>
-            </div>
-         </div>
-         <footer class="card-footer">
-            <a target="_blank" href=https://github.com/Svestis/MScDataScience_NumericalAnalysis class="card-footer-item hover-txt">Project</a>
-         </footer>
-      </div>
-   </div>
-   </div>
-
-<p id="back_to_contents"><a href="#contents" class="hover-txt">Back to page contents</a></p><br>
-     <!--  <br>
-      <h2 class="title">Data protection: A Data Scientist's perspective</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet augue at purus rhoncus ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce tempor facilisis lobortis. Suspendisse potenti. Sed sit amet elit lacinia, volutpat erat at, fermentum tortor. In condimentum, ante non tincidunt imperdiet, mauris libero porttitor nisi, eget rhoncus tortor nisi ut massa. Nunc placerat felis eget consequat blandit. Mauris id dolor eget ante fringilla accumsan. Nulla eget orci dui. Suspendisse vestibulum ligula risus, vitae pellentesque enim molestie vel. Maecenas in massa id sapien sollicitudin malesuada. Donec condimentum porta malesuada. Duis faucibus massa orci, viverra lacinia sapien porta et. Sed ac est vel nibh maximus fringilla. Nunc nec massa sit amet ipsum commodo tempor in sed nulla. Integer augue elit, convallis at ligula quis, tincidunt pretium est.</p>
-      <br>
-      <h2 class="title">Data Analytics Report – Data Processing Pipeline and Evaluation</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet augue at purus rhoncus ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce tempor facilisis lobortis. Suspendisse potenti. Sed sit amet elit lacinia, volutpat erat at, fermentum tortor. In condimentum, ante non tincidunt imperdiet, mauris libero porttitor nisi, eget rhoncus tortor nisi ut massa. Nunc placerat felis eget consequat blandit. Mauris id dolor eget ante fringilla accumsan. Nulla eget orci dui. Suspendisse vestibulum ligula risus, vitae pellentesque enim molestie vel. Maecenas in massa id sapien sollicitudin malesuada. Donec condimentum porta malesuada. Duis faucibus massa orci, viverra lacinia sapien porta et. Sed ac est vel nibh maximus fringilla. Nunc nec massa sit amet ipsum commodo tempor in sed nulla. Integer augue elit, convallis at ligula quis, tincidunt pretium est.</p>
-      <br>
-      <h2 class="title">Data Analytics Implementation: Security Issues' Migitation</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet augue at purus rhoncus ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce tempor facilisis lobortis. Suspendisse potenti. Sed sit amet elit lacinia, volutpat erat at, fermentum tortor. In condimentum, ante non tincidunt imperdiet, mauris libero porttitor nisi, eget rhoncus tortor nisi ut massa. Nunc placerat felis eget consequat blandit. Mauris id dolor eget ante fringilla accumsan. Nulla eget orci dui. Suspendisse vestibulum ligula risus, vitae pellentesque enim molestie vel. Maecenas in massa id sapien sollicitudin malesuada. Donec condimentum porta malesuada. Duis faucibus massa orci, viverra lacinia sapien porta et. Sed ac est vel nibh maximus fringilla. Nunc nec massa sit amet ipsum commodo tempor in sed nulla. Integer augue elit, convallis at ligula quis, tincidunt pretium est.</p>
-      <br> -->
-   </section>
-   <footer class="footer" style="margin-top:2rem">
-      <div class="content has-text-centered">
-         <p class='has-text-centered cust-p'>
-            Koilakos, Panagiotis
-         </p>
-         <p class="has-text-centered cust-p">
-            2022
-         </p>
-      </div>
-   </footer>
+            </li>
+         </ul>
+         <p class="text-center">© 2023 Panagiotis KOILAKOS</p>
+      </footer>
+   </body>
 </html>

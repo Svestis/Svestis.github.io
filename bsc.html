@@ -1,284 +1,256 @@
-
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
    <head>
-      <title>Panagiotis Koilakos - MSc in Data Science</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <title>Panagiotis Koilakos - BSc in Informatics</title>
+      <link rel="stylesheet" href="styles.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="./styles.css"  />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-      <script type='text/javascript' src="./js.js" defer></script>
-      <meta charset="utf-8"/>
+      <script src="./js.js" defer></script>
       <meta name="description" property="og:description" content="Since a young boy, I had a passion to help people and chose to volunteer in order to support the people of this world, local communities, and the environment. Then studies in Informatics came along the way.
          For quite some time I was wondering “How could I combine both of them?” Then it clicked! Working as a Senior Data Management Assistant at UNHCR made sense. So here I am, fulfilling my two passions by supporting the people that were forced to flee by using my experience in Informatics.">
       <meta name="keywords" content="Portfolio, ePortfolio, Data Vizualization, Data Management, Data Science, Computer Science, Informatics, CV, Python, SQL">
       <meta property="og:url" content="svestis.github.io">
-      <meta property="og:title" content="Panagiotis Koilakos - ePortfolio">
+      <meta property="og:title" content="Panagiotis Koilakos -ePortfolio">
       <meta property="og:type" content="profile">
       <link rel="shortcut icon" href="https://img.icons8.com/small/344/user-male-circle.png">
    </head>
-   <section class="hero is-info">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-         <div class="navbar-brand">
-            <a role="button" class="navbar-burger is-active" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            </a>
-         </div>
-         <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-               <a class="navbar-item" rel="noopener noreferrer" href="index.html">
-                  <p>Overview</p>
-               </a>
-               <a class="navbar-item nav-color" rel="noopener noreferrer" href="work_experience.html">
-               Work & Volunteer Experience
-               </a>
-               <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                     <p>MSc in Data Science</p>
+   <body>
+      <div>
+         <nav>
+            <ul class="nav nav-pills sticky-top justify-content-left">
+               <li class="nav-item">
+                  <a class="nav-link px-2" href="index.html">Overview</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="work_experience.html">Work & Volunteer Experience</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MSc in Data Science
                   </a>
-                  <div class="navbar-dropdown">
-                     <a class="navbar-item"  rel="noopener noreferrer" href="msc.html">
-                     General
-                     </a>
-                     <a class="navbar-item" rel="noopener noreferrer" href="msc_html/mod1.html">
-                        <p>The Data Professional</p>
-                     </a>
-                     <a class="navbar-item" rel="noopener noreferrer" href="msc_html/mod2.html">
-                        <p>Numerical Analysis</p>
-                     </a>
+                  <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="msc.html">General</a></li>
+                     <li>
+                        <hr class="dropdown-divider">
+                     </li>
+                     <li><a class="dropdown-item" href="msc_html/mod1.html">The Data Professional</a></li>
+                     <li><a class="dropdown-item" href="msc_html/mod2.html">Numerical Analysis</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">BSc in Informatics (Computer Science)</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="other.html">Other</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="heading">
+            <div class="container">
+               <h1 class="text-body-emphasis">Panagiotis Koilakos</h1>
+               <p class="lead">
+                  Associate Operational Data Management Officer, UNHCR
+               </p>
+               <div class="icons">
+                  <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
+                  <i class="fab fa-github zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
+                  <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h1 class="mt-4 mb-4">BSc in Informatics (Computer Science)</h1>
+      <h2 class="mt-4 mb-4">In general</h2>
+      <p id="free-text">I joined AUEB in late 2014, and for personal reasons, I could not attend the first year of studies. 
+         After the first year of studies, I made a life-changing decision to join the rescue efforts in Lesvos
+         island during the peak of the Refugee situation in Greece. Following that, I joined UNHCR and 
+         decided to dedicate myself to my work, setting aside once more my studies. Finally, during my fourth
+         year of studies, I decided to start chipping out module after module to graduate. I finally 
+         graduated 4 years after starting studying (and double that from the date that I enrolled to 
+         the university) with an average of 7/10.
+      </p>
+      <div class="accordion mx-3 mb-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBSCOne" aria-expanded="true" aria-controls="collapseBSCOne">
+               Study Areas
+               </button>
+            </h2>
+            <div id="collapseBSCOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+               <div class="accordion-body">
+                  Main study areas:<br>
+                  <p>➙ Core of Informatics;<br>
+                     ➙ Mathematics;<br>
+                     ➙ Economics and Administrative Sciences.<br><br>
+                     Specializations:<br>
+                     ➙ Information Systems and Information Security;<br>
+                     ➙ Databases and Knowledge Management.<br>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4">Projects</h2>
+      <div class="row row-cols-3 row-cols-md-3 mb-3 mx-5 text-center">
+         <div class="col">
+            <div class="card zoom-card gr shadow-sm h-100 w-100 mx-auto">
+               <div class="card-body">
+                  <h5 class="card-title">PacMan</h5>
+                  Written in <i class="fab fa-cuttlefish"></i>++ for the CPP course
+                  <div class="mt-3">
+                     <figure class="image container" style="margin-top:10px">
+                        <img class="image" src="../assets/pacman.png" width="250" >
+                     </figure>
                   </div>
                </div>
-               <a class="navbar-item curr-nav" rel="noopener noreferrer" href="bsc.html">
-                  <p class="curr-nav">BSc in Informatics (Computer Science)</p>
-               </a>
-               <a class="navbar-item" rel="noopener noreferrer" href="other.html">
-               Other
-               </a>
-            </div>
-         </div>
-      </nav>
-      <div class="hero-body">
-         <div class="container has-text-left">
-            <p class="title is-2">
-               Panagiotis Koilakos
-            </p>
-            <div class="columns">
-               <div class="column is-two-thirds">
-                  <p id ="header-subtitle" class="subtitle is-4">Associate Operation Data Management Officer, UNHCR</p>
+               <div class="card-footer">
+                  <div class="row text-center">
+                     <div class="col">
+                        <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/PacMan" target="_blank" rel="noopener noreferrer">Project</a>
+                     </div>
+                     <div class="col">
+                        <a class="footer-link no-decor hover-txt" href="https://www.youtube.com/watch?v=wzr07HSXRNk" target="_blank" rel="noopener noreferrer">Video</a>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="icons">
-               <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
-               <i class="fa fa fa-linkedin zoom-icon"></i>
-               </a>
-               <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
-               <i class="fa fa fa-github zoom-icon"></i>
-               </a>
-               <a class="icon" target="_blank" href="https://medium.com/@panoscs" rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white" class="zoom-icon">
-                     <path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/>
+         </div>
+         <div class="col">
+            <div class="card zoom-card gr shadow-sm h-100 w-100 mx-auto">
+               <div class="card-body">
+                  <h5 class="card-title">Bike Sharing Demand Prediction Problem</h5>
+                  <p>Written in <i class="fab fa-python"></i> for the Web Mining and Database Mining course</p>
+                  <div class="mt-3">
+                     <img src="assets/ml.png" class="card-img-top" alt="ML graph" width="250">
+                     <img src="assets/stacking.png" class="card-img-top" alt="ML graph" width="250">
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <div class="row text-center">
+                     <div class="col">
+                        <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/Data-Science-and-Web-Mining-Regression-Problem" target="_blank" rel="noopener noreferrer">Project</a>
+                     </div>
+                     <div class="col">
+                        <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/Data-Science-and-Web-Mining-Regression-Problem/blob/master/Final.ipynb" target="_blank" rel="noopener noreferrer">Report</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card zoom-card gr shadow-sm h-100 w-100 mx-auto">
+               <div class="card-body">
+                  <h5 class="card-title">Coin Detection</h5>
+                  Written in <i class="fab fa-python"></i> for the Computer vision problem for the Human Computer Interaction course, including Computer Vision.</i><br><br>
+                  Collaborator: <a class="no-decor hover-txt" href="https://github.com/XanthosXanthopoulos" target="_blank">Xanthos Xanthopoulos</a>
+                  <div class="mt-3">
+                     <img src="assets/coin_detection.png" class="card-img-top cust-img" alt="Coin detection">
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/CoinDetection" target="_blank" rel="noopener noreferrer">Project</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row row-cols-3 row-cols-md-3 mb-3 mx-5 text-center">
+         <div class="col">
+            <div class="card zoom-card gr shadow-sm h-100 w-100 mx-auto">
+               <div class="card-body">
+                  <h5 class="card-title">Othello AI</h5>
+                  Written in <i class="fab fa-python"></i>, materializing Othello Game implementing MiniMax algorithm with alpha-beta pruning for the AI course</i><br><br>
+                  Collaborator: <a class="no-decor hover-txt" href="https://github.com/orfibus" target="_blank">Orfeas "Bus"</a>
+                  <div class="mt-3">
+                     <img src="assets/othello.png" class="card-img-top cust-img" alt="Othello">
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/Othello_MinMax" target="_blank" rel="noopener noreferrer">Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card zoom-card gr shadow-sm h-100 w-100 mx-auto">
+               <div class="card-body">
+                  <h5 class="card-title">Data Structures</h5>
+                  Written in <i class="fab fa-java"></i>, three different programmes implementing data structures algorithms for the for the Data Structures course</i><br><br>
+                  <div class="mt-3">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFWGcIlGxvmdkjVhbsZTeYeyEFqSP124pBlZA6fc4hg&s" class="card-img-top" alt="Othello">
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/Data-Structures-Programmes" target="_blank" rel="noopener noreferrer">Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card zoom-card gr shadow-sm h-100 w-100 mx-auto">
+               <div class="card-body">
+                  <h5 class="card-title">LCW Pectus Wearable Android App</h5>
+                  Written in <i class="fab fa-android"></i>/<i class="fab fa-java"></i>Wearable app connected via <i class="fab fa-bluetooth"></i> with the Wearable device (coded in Arduino) for the Information Systems Development course<br><br>
+                  Collaborator: <a class="no-decor hover-txt" href="https://github.com/kritonpc" target="_blank">Kriton Georgiou</a>
+                  <div class="mt-3">
+                     <img src="assets/lcw.png" class="card-img-top cust-img2" alt="Coin detection">
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/LCW" target="_blank" rel="noopener noreferrer">Project</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-2 mb-3 mx-5 text-center">
+         <div class="col">
+            <div class="card zoom-card gr shadow-sm h-100 w-100 mx-auto">
+               <div class="card-body">
+                  <h5 class="card-title">Pizza Production System</h5>
+                  Written in <i class="fab fa-cuttlefish"></i> for the Operating Systems' course<br><br>
+                  Collaborator: <a class="no-decor hover-txt" href="https://github.com/iliaskap12" target="_blank">Ilias Kapareliotis</a>
+               </div>
+               <div class="card-footer">
+                  <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/Pizza-Production-Line" target="_blank" rel="noopener noreferrer">Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card zoom-card gr shadow-sm h-100 w-100 mx-auto">
+               <div class="card-body">
+                  <h5 class="card-title">Assembly (MIPS32) Functions</h5>
+                  Written in Assembly-MIPS32/<i class="fab fa-java"></i>, implementing a Factorial & Hash Table implementation for the Computer Systems Organization course<br><br>
+                  Collaborator: <a class="no-decor hover-txt" href="https://github.com/iliaskap12" target="_blank">Ilias Kapareliotis</a>
+               </div>
+               <div class="card-footer">
+                  <a class="footer-link no-decor hover-txt" href="https://github.com/Svestis/Assembly-MIPS32-Functions" target="_blank" rel="noopener noreferrer">Project</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="py-3 my-4">
+         <ul class="nav justify-content-center">
+            <li class="nav-item">
+               <a href="#" class="icon-link icon-link-hover"
+                  style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0);">
+                  Back to top
+                  <svg class="bi bi-arrow-up" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
                   </svg>
                </a>
-               <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
-               <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
-               </a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <br>
-   <section class="container">
-      <h2 class="title is-1">BSc in Informatics (Computer Science)</h2>
-      <h2 class="title">In General</h2>
-      I joined AUEB in late 2014, and for personal reasons, I could not attend the first year of studies. After the first year of studies, I made a life-changing decision to join the rescue efforts in Lesvos island during the peak of the Refugee situation in Greece. Following that, I joined UNHCR and decided to dedicate myself to my work, setting aside once more my studies. Finally, during my fourth year of studies, I decided to start chipping out module after module to graduate. I finally graduated 4 years after starting studying (and double that from the date that I enrolled to the university) with an average of 7/10.<br><br>
-      <article class="message is-info">
-         <div class="message-header">
-            <p>Study areas</p>
-         </div>
-         <div class="message-body">
-            Main study areas:<br>
-            <p>➙ Core of Informatics;<br>
-               ➙ Mathematics;<br>
-               ➙ Economics and Administrative Sciences.<br><br>
-               Specializations:<br>
-               ➙ Information Systems and Information Security;<br>
-               ➙ Databases and Knowledge Management.<br>
-            </p>
-         </div>
-      </article>
-   </section>
-   <br>
-   <br>
-   <section class="container">
-      <h2 class="title">Projects</h2>
-      <div class="columns is-multiline is-centered">
-      <div class="column is-one-third gr">
-         <div class="card zoom-card">
-            <p class="card-header-title">
-               PacMan
-            </p>
-            <div class="card-content">
-               <div class="content">
-                  Game developmet for the CPP course<br><br>
-                  <span class="tag is-black is-medium"><i class="fab fa-cuttlefish"></i>++</span>
-               </div>
-               <div>
-                  <figure class="image container" style="margin-top:10px">
-                     <img class="image" src="assets/pacman.png" width="100px" height="auto">
-                  </figure>
-               </div>
-            </div>
-            <footer class="card-footer">
-               <a target="_blank" href=https://github.com/Svestis/PacMan class="card-footer-item hover-txt">Project</a>
-               <a target="_blank" href="https://www.youtube.com/watch?v=wzr07HSXRNk" class="card-footer-item hover-txt" rel="noopener noreferrer">Video</a>
-            </footer>
-         </div>
-      </div>
-      <div class="column is-one-third gr">
-         <div class="card zoom-card">
-            <p class="card-header-title">
-               Bike Sharing Demand Prediction Problem
-            </p>
-            <div class="card-content">
-               <div class="content">
-                  Prediction problem the Web Mining and Database Mining course<br><br>
-                  <span class="tag is-black is-medium"><i class="fab fa-python"></i></span>
-               </div>
-               <div>
-                  <figure class="image container">
-                     <img class="image" src="assets/ml.png" width="250px" height="auto">
-                  </figure>
-                  <figure class="image container">
-                     <img class="image" src="assets/stacking.png" width="250px" height="auto">
-                  </figure>
-               </div>
-            </div>
-            <footer class="card-footer">
-               <a target="_blank" href="" class="card-footer-item hover-txt">Project</a>
-               <a target="_blank" href="https://github.com/Svestis/Data-Science-and-Web-Mining-Regression-Problem/blob/master/Final.ipynb" class="card-footer-item hover-txt" rel="noopener noreferrer">Report</a>
-            </footer>
-         </div>
-      </div>
-      <div class="column is-one-third gr">
-         <div class="card zoom-card">
-            <p class="card-header-title">
-               Coin Detection
-            </p>
-            <div class="card-content">
-               <div class="content">
-                  Computer vision problem for the Human Computer Interaction course (including Computer Vision)<br><br><span class="tag is-black is-medium"><i class="fab fa-python"></i></span><br><br>Collaborator: <a class="hover-txt" href="https://github.com/XanthosXanthopoulos" target="_blank">Xanthos Xanthopoulos</a><br>
-               </div>
-               <div id="cust-div">
-                  <figure class="image">
-                     <img class="image cust-img" src="assets/coin_detection.png">
-                  </figure>
-               </div>
-            </div>
-            <footer class="card-footer">
-               <a target="_blank" href="https://github.com/Svestis/CoinDetection" class="card-footer-item hover-txt">Project</a>
-            </footer>
-         </div>
-      </div>
-      <div class="column is-one-third gr">
-         <div class="card zoom-card">
-            <p class="card-header-title">
-               Othello AI
-            </p>
-            <div class="card-content">
-               <div class="content">
-                  Othello Game implementing MiniMax algorithm with alpha-beta pruning for the AI course<br><br><span class="tag is-black is-medium"><i class="fab fa-python"></i></span><br><br>Collaborator: <a class="hover-txt" href="https://github.com/orfibus" target="_blank">Orfeas "Bus"</a>
-               </div>
-               <div class="cust-div">
-                  <figure class="image">
-                     <img class="image cust-img2" src="assets/othello.png">
-                  </figure>
-               </div>
-            </div>
-            <footer class="card-footer">
-               <a target="_blank" href="https://github.com/Svestis/Othello_MinMax" class="card-footer-item hover-txt">Project</a>
-            </footer>
-         </div>
-      </div>
-      <div class="column is-one-third gr">
-         <div class="card zoom-card">
-            <p class="card-header-title">
-               Data Structures
-            </p>
-            <div class="card-content">
-               <div class="content">
-                  Three different programmes implementing data structures algorithms for the for the Data Structures course<br><br><span class="tag is-black is-medium"><i class="fab fa-java"></i></span>
-               </div>
-            </div>
-            <footer class="card-footer">
-               <a target="_blank" href="https://github.com/Svestis/Data-Structures-Programmes" class="card-footer-item hover-txt">Project</a>
-            </footer>
-         </div>
-      </div>
-      <div class="column is-one-third gr">
-         <div class="card zoom-card">
-            <p class="card-header-title">
-               LCW Pectus Wearable Android App
-            </p>
-            <div class="card-content">
-               <div class="content">
-                  Wearable app connected via <i class="fab fa-bluetooth"></i> with the Wearable device (coded in Arduino) for the Information Systems Development course<br><br><span class="tag is-black is-medium"><i class="fab fa-android"></i>/<i class="fab fa-java"></i></span><br><br>Collaborator: <a href="https://github.com/kritonpc" target="_blank" class="hover-txt">Kriton Georgiou</a>
-               </div>
-               <div id="cust-div">
-                  <figure class="image">
-                     <img class="image cust-img" src="assets/lcw.png">
-                  </figure>
-               </div>
-            </div>
-            <footer class="card-footer">
-               <a target="_blank" href="https://github.com/Svestis/LCW" class="card-footer-item hover-txt">Project</a>
-            </footer>
-         </div>
-      </div>
-      <div class="column is-one-third gr">
-         <div class="card zoom-card">
-            <p class="card-header-title">
-               Pizza Production System
-            </p>
-            <div class="card-content">
-               <div class="content">
-                  Pizza Production System implementation for the Operating Systems course<br><br><span class="tag is-black is-medium"><i class="fab fa-cuttlefish"></i></span><br><br>Collaborator: <a class="hover-txt" href="https://github.com/iliaskap12">Ilias Kapareliotis</a>
-               </div>
-               <footer class="card-footer">
-                  <a target="_blank" href="https://github.com/Svestis/Pizza-Production-Line" class="card-footer-item hover-txt">Project</a>
-               </footer>
-            </div>
-         </div>
-      </div>
-      <div class="column is-one-third gr">
-         <div class="card zoom-card">
-            <p class="card-header-title">
-               Assembly (MIPS32) Functions
-            </p>
-            <div class="card-content">
-               <div class="content">
-                  Factorial & Hash Table implementation for the Computer Systems Organization course<br><br><span class="tag is-black is-medium">Assembly-MIPS32/<i class="fab fa-java"></i></span><br><br>Collaborator: <a class="hover-txt" href="https://github.com/iliaskap12">Ilias Kapareliotis</a>
-               </div>
-               <footer class="card-footer">
-                  <a target="_blank" href="https://github.com/Svestis/Assembly-MIPS32-Functions" class="card-footer-item hover-txt">Project</a>
-               </footer>
-            </div>
-         </div>
-      </div>
-   </section>
-   <footer class="footer" style="margin-top:2rem">
-      <div class="content has-text-centered">
-         <p class='has-text-centered cust-p'>
-            Koilakos, Panagiotis
-         </p>
-         <p class="has-text-centered cust-p">
-            2022
-         </p>
-      </div>
-   </footer>
+            </li>
+         </ul>
+         <p class="text-center">© 2023 Panagiotis KOILAKOS</p>
+      </footer>
+   </body>
 </html>

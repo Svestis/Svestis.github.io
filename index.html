@@ -1,16 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
    <head>
-      <title>Panagiotis Koilakos</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <title>Panagiotis Koilakos - ePortfolio</title>
+      <link rel="stylesheet" href="styles.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="./styles.css"  />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-      <script type='text/javascript' src="./js.js" defer></script>
-      <meta charset="utf-8"/>
+      <script src="./js.js" defer></script>
       <meta name="description" property="og:description" content="Since a young boy, I had a passion to help people and chose to volunteer in order to support the people of this world, local communities, and the environment. Then studies in Informatics came along the way.
          For quite some time I was wondering “How could I combine both of them?” Then it clicked! Working as a Senior Data Management Assistant at UNHCR made sense. So here I am, fulfilling my two passions by supporting the people that were forced to flee by using my experience in Informatics.">
       <meta name="keywords" content="Portfolio, ePortfolio, Data Vizualization, Data Management, Data Science, Computer Science, Informatics, CV, Python, SQL">
@@ -19,312 +20,232 @@
       <meta property="og:type" content="profile">
       <link rel="shortcut icon" href="https://img.icons8.com/small/344/user-male-circle.png">
    </head>
-   <section class="hero is-info">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-         <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            </a>
-         </div>
-         <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-               <a class="navbar-item curr-nav">
-                  <p class="curr-nav">Overview</p>
-               </a>
-               <a class="navbar-item nav-color" rel="noopener noreferrer" href="work_experience.html">
-               Work & Volunteer Experience
-               </a>
-               <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                     <p>MSc in Data Science</p>
+   <body>
+      <div>
+         <nav>
+            <ul class="nav nav-pills sticky-top justify-content-left">
+               <li class="nav-item">
+                  <a class="nav-link active px-2" aria-current="page" href="#">Overview</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="work_experience.html">Work & Volunteer Experience</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MSc in Data Science
                   </a>
-                  <div class="navbar-dropdown">
-                     <a class="navbar-item" rel="noopener noreferrer" href="msc.html">
-                     General
-                     </a>
-                     <a class="navbar-item" rel="noopener noreferrer" href="msc_html/mod1.html">
-                        <p>The Data Professional</p>
-                     </a>
-                     <a class="navbar-item" rel="noopener noreferrer" href="msc_html/mod2.html">
-                        <p>Numerical Analysis</p>
+                  <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="msc.html">General</a></li>
+                     <li>
+                        <hr class="dropdown-divider">
+                     </li>
+                     <li><a class="dropdown-item" href="msc_html/mod1.html">The Data Professional</a></li>
+                     <li><a class="dropdown-item" href="msc_html/mod2.html">Numerical Analysis</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="bsc.html">BSc in Informatics (Computer Science)</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="other.html">Other</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="heading">
+            <div class="container">
+               <h1 class="text-body-emphasis">Panagiotis Koilakos</h1>
+               <p class="lead">
+                  Associate Operational Data Management Officer, UNHCR
+               </p>
+               <div class="icons">
+                  <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
+                  <i class="fab fa-github zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
+                  <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h2 class="mt-4 mb-4">In a glance</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-3 row-cols-md-3 mb-3 mx-2 text-center">
+            <div class="col">
+               <div class="card mb-4 rounded-3 shadow-sm h-100">
+                  <div class="card-header py-3">
+                     <h4 class="my-0 fw-normal">Current position</h4>
+                  </div>
+                  <div class="card-body">
+                     <h4 class="card-title pricing-card-title"><span>Associate <abbr title="Operational Data Management">ODM</abbr> Officer</span></h4>
+                     <h6 class="card-subtitle mb-2 text-body-secondary"><abbr title="United Nations High Commissioner for Refugees">UNHCR</abbr>, <abbr title="Division of Resilience and Solutions - Global Cash Operations">DRS-GCO</abbr></h6>
+                     <a target="_blank" href="https://www.unhcr.org" rel="noopener noreferrer">
+                        <figure>
+                           <img class="zoom-pic" src="https://www.unhcr.org/assets/img/unhcr-logo.png" alt="UNHCR logo" width="250">
+                        </figure>
                      </a>
                   </div>
                </div>
-               <a class="navbar-item" rel="noopener noreferrer" href="bsc.html">
-               BSc in Informatics (Computer Science)
+            </div>
+            <div class="col">
+               <div class="card mb-4 rounded-3 shadow-sm h-100">
+                  <div class="card-header py-3">
+                     <h4 class="my-0 fw-normal">Current studies</h4>
+                  </div>
+                  <div class="card-body">
+                     <h4 class="card-title pricing-card-title"><span>MSc in Data Science</span></h4>
+                     <h6 class="card-subtitle mb-2 text-body-secondary">University of Essex</h6>
+                     <a target="_blank" href="https://online.essex.ac.uk/" rel="noopener noreferrer">
+                        <figure>
+                           <img class="zoom-pic" src="assets/uni_essex_logo.png" alt="Essex Logo" width="250">
+                        </figure>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card mb-4 rounded-3 shadow-sm h-100">
+                  <div class="card-header py-3">
+                     <h4 class="my-0 fw-normal">Current Volunteer Position</h4>
+                  </div>
+                  <div class="card-body">
+                     <h4 class="card-title pricing-card-title"><span>Member of the Audit Committee</span></h4>
+                     <h6 class="card-subtitle mb-2 text-body-secondary">Volunteer Forest Protection & Firefighting Team</h6>
+                     <a target="_blank" href="https://www.facebook.com/dasoprostasiavaris.gr" rel="noopener noreferrer">
+                        <figure class="is-128x128">
+                           <img class="has-image-centered zoom-pic" src="assets/vari_logo.png" alt="Volunteer Firefighting team logo" width="130">
+                        </figure>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-2 text-center justify-content-center">
+            <div class="col-xl-7">
+               <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                     <h4 class="my-0 fw-normal">Main Skills</h4>
+                  </div>
+                  <div class="card-body">
+                     <canvas id="chart-cont"></canvas>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4">Featured</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-3 row-cols-md-3 mb-3 mx-2 text-center">
+            <div class="col">
+               <a class="no-decor" href="https://www.linkedin.com/pulse/we-do-what-because-must-panagiotis-koilakos/" target="_blank" rel="noopener noreferrer">
+                  <div class="card h-100 zoom-card gr shadow-sm">
+                     <div class="card-body">
+                        <h5 class="card-title">We do what we do, because we must</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Article</h6>
+                     </div>
+                     <div class="card-footer">Credits: Sergey Ponomarev for The New York Times</div>
+                     <img src="assets/lesvos.jpg" class="card-img-bottom" alt="Boat arriving in Lesvos" width="250">
+                  </div>
                </a>
-               <a class="navbar-item" rel="noopener noreferrer" href="other.html">
-               Other
+            </div>
+            <div class="col">
+               <a class="no-decor" href="https://github.com/Svestis/PacMan" target="_blank" rel="noopener noreferrer">
+                  <div class="card h-100 zoom-card gr shadow-sm">
+                     <div class="card-body">
+                        <h5 class="card-title">Pacman</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Project</h6>
+                        <p class="card-text">Written in <i class="fab fa-cuttlefish fa-bounce"></i>++ for the CPP course</p>
+                     </div>
+                     <img src="assets/pacman.png" class="card-img-bottom" alt="Pacman" width="250">
+                  </div>
+               </a>
+            </div>
+            <div class="col">
+               <a class="no-decor" href="https://github.com/Svestis/Data-Science-and-Web-Mining-Regression-Problem" target="_blank" rel="noopener noreferrer">
+                  <div class="card h-100 zoom-card gr shadow-sm">
+                     <div class="card-body">
+                        <h5 class="card-title">Bike sharing demand prediction problem</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Project</h6>
+                        <p>Written in <i class="fab fa-python fa-bounce"></i> for the Web Mining and Database Mining course</p>
+                     </div>
+                     <img src="assets/ml.png" class="card-img-top" alt="ML graph" width="250">
+                     <img src="assets/stacking.png" class="card-img-top" alt="ML graph" width="250">
+                  </div>
                </a>
             </div>
          </div>
-      </nav>
-      <div class="hero-body">
-         <div class="container has-text-left">
-            <p class="title is-2">
-               Panagiotis Koilakos
-            </p>
-            <div class="columns">
-               <div class="column is-two-thirds">
-                  <p id ="header-subtitle" class="subtitle is-4">Associate Operation Data Management Officer, UNHCR</p>
+      </div>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4">More information</h2>
+      <div class="row row-cols-2 row-cols-md-2 mb-3 mx-5 text-center">
+         <div class="col">
+            <div class="card border-light shadow-sm">
+               <div class="card-body">
+                  <h5 class="card-title">Work & Volunteer Experience</h5>
+                  <p class="card-text">Information on Work and Volunteer Experience</p>
+               </div>
+               <div class="card-footer card-link">
+                  <a class="no-decor" href="./work_experience.html"
+                     target="_blank" rel="noopener noreferrer">Go to page</a>
                </div>
             </div>
-            <div class="icons">
-               <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
-               <i class="fa fa fa-linkedin zoom-icon"></i>
-               </a>
-               <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
-               <i class="fa fa fa-github zoom-icon"></i>
-               </a>
-               <a class="icon" target="_blank" href="https://medium.com/@panoscs" rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white" class="zoom-icon">
-                     <path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/>
+         </div>
+         <div class="col">
+            <div class="card border-light shadow-sm">
+               <div class="card-body">
+                  <h5 class="card-title">MSc in Data Science</h5>
+                  <p class="card-text">Including all projects related to the MSc in Data Science</p>
+               </div>
+               <div class="card-footer card-link">
+                  <a class="no-decor" href="./msc.html"
+                     target="_blank" rel="noopener noreferrer">Go to page</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-2 mb-3 mx-5 text-center">
+         <div class="col">
+            <div class="card border-light shadow-sm">
+               <div class="card-body">
+                  <h5 class="card-title">BSc in Informatics (Computer Science)</h5>
+                  <p class="card-text">Includes all projects related to the BSc in Informatics (Computer Science)</p>
+               </div>
+               <div class="card-footer card-link">
+                  <a class="no-decor" href="./bsc.html"
+                     target="_blank" rel="noopener noreferrer">Go to page</a>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card border-light shadow-sm">
+               <div class="card-body">
+                  <h5 class="card-title">Other</h5>
+                  <p class="card-text">Includes everything not falling under the above categories </p>
+               </div>
+               <div class="card-footer card-link">
+                  <a class="no-decor" href="./other.html"
+                     target="_blank" rel="noopener noreferrer">Go to page</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="py-3 my-4">
+         <ul class="nav justify-content-center">
+            <li class="nav-item">
+               <a href="#" class="icon-link icon-link-hover"
+                  style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0);">
+                  Back to top
+                  <svg class="bi bi-arrow-up" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
                   </svg>
                </a>
-               <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
-               <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
-               </a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <br>
-   <section class="container">
-      <h2 class="title">In a glance</h2>
-   </section>
-   <br>
-   <div class="container">
-   <div class="columns is-multiline is-centered">
-      <div class="column is-centered is-one-third">
-         <p class="subtitle has-text-centered is-4">Current Position</p>
-         <div class="box glance">
-            <p class="has-text-centered title is-5">Associate Operation Data Management Officer</p>
-            <p class="has-text-centered subtitle is-6">UNHCR, Regional Bureau for Europe</p>
-            <a target="_blank" href="https://www.unhcr.org" rel="noopener noreferrer">
-               <figure class="image container">
-                  <img class="image zoom-pic" src="https://www.unhcr.org/assets/img/unhcr-logo.png" width="250px" height="auto">
-               </figure>
-            </a>
-         </div>
-      </div>
-      <hr class="mobile">
-      <div class="column is-centered is-one-third">
-         <p class="subtitle has-text-centered is-4" >Current Studies</p>
-         <div class="box glance">
-            <p class="has-text-centered title is-5">MSc in Data Science</p>
-            <p class="has-text-centered subtitle is-6">University of Essex Online</p>
-            <a target="_blank" href="https://online.essex.ac.uk/" rel="noopener noreferrer">
-               <figure class="image container">
-                  <img class="image zoom-pic" src="assets/uni_essex_logo.png" width="180px" height="auto">
-               </figure>
-            </a>
-         </div>
-      </div>
-      <div class="column is-centered is-one-third">
-         <p class="subtitle has-text-centered is-4" >Current Volunteer Position</p>
-         <div class="box glance">
-            <p class="has-text-centered title is-5">Forest Firefighter</p>
-            <hr class="rounded">
-            <p class="has-text-centered title is-5">Member of the Audit Committee</p>
-            <p class="has-text-centered subtitle is-6">Volunteer Forest Protection & Firefighting Team</p>
-            <a target="_blank" href="https://www.facebook.com/dasoprostasiavaris.gr" rel="noopener noreferrer">
-               <figure class="image container is-128x128">
-                  <img class="has-image-centered image zoom-pic" src="assets/vari_logo.png" width="130px" height="auto">
-               </figure>
-            </a>
-         </div>
-      </div>
-   </div>
-   <br>
-   <div class="columns is-centered">
-      <div class="column is-centered is-half">
-         <p class="subtitle has-text-centered is-4">Main Skills</p>
-         <div class="box">
-            <canvas width=200 height=75 id="chart-cont"></canvas>
-         </div>
-      </div>
-      <!-- <div class="column is-centered is-half">
-         <p class="subtitle has-text-centered">Learning Curve</p>
-         <div class="box">
-            <canvas width=200 height=75 id="chart-cont2"></canvas>
-         </div>
-         </div>
-         </div> -->
-   </div>
-   <br>
-   </section>
-   <section class="container">
-      <section>
-         <p class="title">Featured</p>
-      </section>
-      <br>
-      <div class="columns is-multiline is-centered">
-         <div class="column is-one-third">
-            <div class="card zoom-card ftrd gr">
-               <a class="ftr subtitle is-6" href="https://www.linkedin.com/pulse/we-do-what-because-must-panagiotis-koilakos/" target="_blank" rel="noopener noreferrer">
-                  <p class="card-header-title">
-                     Article
-                  </p>
-                  <div class="card-content">
-                     <div class="content">
-                        We do what we do, because we must
-                     </div>
-                     <div>
-                        <figure class="image container">
-                           <img class="image" src="assets/lesvos.jpg" width="250px" height="auto">
-                        </figure>
-                        <p class="has-text-centered">Credits: Sergey Ponomarev for The New York Times</p>
-                     </div>
-                  </div>
-               </a>
-            </div>
-         </div>
-         <div class="column is-one-third">
-            <div class="card zoom-card ftrd gr">
-               <a class="ftr subtitle is-6" href="https://github.com/Svestis/PacMan" target="_blank" rel="noopener noreferrer">
-                  <p class="card-header-title">
-                     Project
-                  </p>
-                  <div class="card-content">
-                     <div class="content">
-                        <b>PacMan</b><br><br>
-                        Written in <i class="fab fa-cuttlefish"></i>++ for the CPP course
-                     </div>
-                     <div>
-                        <figure class="image container">
-                           <img class="image" src="assets/pacman.png" width="250px" height="auto">
-                        </figure>
-                     </div>
-                  </div>
-               </a>
-            </div>
-         </div>
-         <div class="column is-one-third">
-            <div class="card zoom-card ftrd gr">
-               <a class="ftr subtitle is-6" href="https://github.com/Svestis/Data-Science-and-Web-Mining-Regression-Problem" target="_blank" rel="noopener noreferrer">
-                  <p class="card-header-title">
-                     Project
-                  </p>
-                  <div class="card-content">
-                     <div class="content">
-                        <b>Bike Sharing Demand Prediction Problem</b>
-                        <br><br>
-                        Written in <i class="fab fa-python"></i> for the Web Mining and Database Mining course
-                     </div>
-                     <div>
-                        <figure class="image container">
-                           <img class="image" src="assets/ml.png" width="250px" height="auto">
-                        </figure>
-                        <figure class="image container">
-                           <img class="image" src="assets/stacking.png" width="250px" height="auto">
-                        </figure>
-                     </div>
-                  </div>
-               </a>
-            </div>
-         </div>
-         <!--          <div class="column is-half">
-            <div class="card zoom-card ftrd">
-               <a class="ftr subtitle is-6" href="https://github.com/Svestis/PacMan" target="_blank">
-                  <p class="card-header-title">
-                     Article
-                  </p>
-                  <div class="card-content">
-                     <div class="content">
-                        PacMan, written in C++
-                     </div>
-                     <div>
-                     <figure class="image container">
-                              <img class="image" src="assets/pacman.png" width="250px" height="auto">
-                     </figure>
-                     </div>
-                  </div>
-               </a>
-            </div>
-            </div> -->
-      </div>
-   </section>
-   <br>
-   <section class="container">
-      <section>
-         <p class="title">More Information</p>
-      </section>
-      <br>
-      <div class="columns is-multiline is-centered">
-         <div class="column is-half">
-            <div class="card mi">
-               <p class="card-header-title">
-                  Work & Volunteer Experience
-               </p>
-               <div class="card-content">
-                  <div class="content">
-                     Information on Work Experience and Volunteer Experience
-                  </div>
-               </div>
-               <footer class="card-footer">
-                  <a target="_blank" href="./work_experience.html" class="card-footer-item hover-txt" rel="noopener noreferrer">Go to page</a>
-               </footer>
-            </div>
-         </div>
-         <div class="column is-half">
-            <div class="card mi">
-               <p class="card-header-title">
-                  MSc in Data Science
-               </p>
-               <div class="card-content">
-                  <div class="content">
-                     Including all projects related to the MSc in Data Science
-                  </div>
-               </div>
-               <footer class="card-footer">
-                  <a target="_blank" href="./msc.html" class="card-footer-item hover-txt" rel="noopener noreferrer">Go to page</a>
-               </footer>
-            </div>
-         </div>
-      </div>
-      <div class="columns is-multiline is-centered">
-         <div class="column is-half">
-            <div class="card mi">
-               <p class="card-header-title">
-                  BSc in Informatics (Computer Science)
-               </p>
-               <div class="card-content">
-                  <div class="content">
-                     Includes all projects related to the BSc in Informatics (Computer Science)
-                  </div>
-               </div>
-               <footer class="card-footer">
-                  <a target="_blank" href="./bsc.html" class="card-footer-item hover-txt" rel="noopener noreferrer">Go to page</a>
-               </footer>
-            </div>
-         </div>
-         <div class="column is-half">
-            <div class="card mi">
-               <p class="card-header-title">
-                  Other
-               </p>
-               <div class="card-content">
-                  <div class="content">
-                     Includes everything not falling under the above categories
-                  </div>
-               </div>
-               <footer class="card-footer">
-                  <a target="_blank" href="./other.html" class="card-footer-item hover-txt" rel="noopener noreferrer">Go to page</a>
-               </footer>
-            </div>
-         </div>
-      </div>
-   </section>
-   <footer class="footer" style="margin-top:2rem">
-      <div class="content has-text-centered">
-         <p class='has-text-centered cust-p'>
-            Koilakos, Panagiotis
-         </p>
-         <p class="has-text-centered cust-p">
-            2022
-         </p>
-      </div>
-   </footer>
+            </li>
+         </ul>
+         <p class="text-center">© 2023 Panagiotis KOILAKOS</p>
+      </footer>
+   </body>
 </html>
