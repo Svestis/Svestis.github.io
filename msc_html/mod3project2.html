@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Panagiotis Koilakos - MSc in Data Science - Deciphering Big Data</title>
+      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+      <script src="./js.js" defer></script>
+      <meta name="description" property="og:description" content="Since a young boy, I had a passion to help people and chose to volunteer in order to support the people of this world, local communities, and the environment. Then studies in Informatics came along the way.
+         For quite some time I was wondering “How could I combine both of them?” Then it clicked! Working as a Senior Data Management Assistant at UNHCR made sense. So here I am, fulfilling my two passions by supporting the people that were forced to flee by using my experience in Informatics.">
+      <meta name="keywords" content="Portfolio, ePortfolio, Data Vizualization, Data Management, Data Science, Computer Science, Informatics, CV, Python, SQL">
+      <meta property="og:url" content="svestis.github.io">
+      <meta property="og:title" content="Panagiotis Koilakos - ePortfolio">
+      <meta property="og:type" content="profile">
+      <link rel="shortcut icon" href="https://img.icons8.com/small/344/user-male-circle.png">
+   </head>
+   <body>
+         <div class="heading">
+            <div class="container">
+               <h1 class="text-body-emphasis">Panagiotis Koilakos</h1>
+               <p class="lead">
+                  Associate Operational Data Management Officer, UNHCR
+               </p>
+               <div class="icons">
+                  <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
+                  <i class="fab fa-github zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
+                  <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
+                  </a>
+               </div>
+               <a href="mod3.html" type="button" class="btn btn-primary icon-link go-back border-1 icon-link icon-link-hover mb-3 mt-4" style="--bs-icon-link-transform: translate3d(-0.25rem, 0, 0);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                   </svg>
+                  Go back
+               </a>
+            </div>
+         </div>
+      </div>
+      <h1 class="mt-4 mb-4">MSc in Data Science - Deciphering Big Data</h1>
+      <h2 class="mt-4 mb-4">Executive Summary</h2>
+      <div class="accordion mx-3 mb-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button  id="contents" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               Contents
+               </button>
+            </h2>
+            <div  id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">
+                  1. <a href="#intro" rel="noopener noreferrer" class="hover-txt no-decor">Introduction</a><br>
+                  2. <a href="#summ" rel="noopener noreferrer" class="hover-txt no-decor">Summary Findings</a><br>
+                  3. <a href="#sr" rel="noopener noreferrer" class="hover-txt no-decor">System Requirements</a><br>
+                  4. <a href="#per" rel="noopener noreferrer" class="hover-txt no-decor">Performance</a><br>
+                  5. <a href="#erd" rel="noopener noreferrer" class="hover-txt no-decor">Entity Relationship Diagram</a><br>
+                  6. <a href="#dp" rel="noopener noreferrer" class="hover-txt no-decor">Data Protection</a><br>
+                  7. <a href="#rec" rel="noopener noreferrer" class="hover-txt no-decor">Recommendations</a><br>
+                  8. <a href="#con" rel="noopener noreferrer" class="hover-txt no-decor">Conclusion</a><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <h3 id="intro" class="mt-4 mb-4">Introduction</h3>
+                     <p class="card-text">&emsp;KTK Consultants is pleased to present the new redesign of the Transport for Wales (TfW) ticketing system database that aligns with the Welsh Transport Strategy for 2022.<br><br>
+                        &emsp;In an ever-increasing digital age, where customers are used to convenience and quick turnarounds, TfW aims to improve how passengers purchase tickets across all their various transport offerings. TfW's primary goal is to provide a ticketing system that allows passengers to conveniently purchase tickets from retail outlets, TfW stations, and digital platforms. The system will be supported through a real-time geolocating system that tracks bus and train arrival times, busy routes, travel patterns and passenger habits (Finzgar & Trebar, 2011). The goal is to use this data to inform future transport planning and resource allocation across Wales.<br><br>
+                        &emsp;A robust dynamic database management system needs to be in place for this ticketing system to run effectively and efficiently. The database management system needs to consider user requirements, current security policies, rate of growth, and legal and compliance considerations related to data protection. During the system definition stage, in which the scope and boundary of the database system were defined, KTK consultants identified the significant users and their requirements that are to be supported within the system. With the use of published annual reports and interviews of the CEO and senior executives, it was established that key decision makers wanted to understand their passenger habits and travel patterns to inform on how to improve the transport service offerings continuously.<br>
+                     </p>
+                     <hr>
+                     <h3 id="summ" class="mt-4 mb-4">Summary Findings</h3>
+                     <p class="card-text">&emsp;TThe key users of the ticketing system were identified as the transport planner responsible for logistics, route management and overall oversight of the company's transport organisation. The customer service advisor is responsible for assisting customers in purchasing tickets, ensuring the safe dispatch of trains, and advising passengers on delays. Finally, the passengers are key users who want to purchase tickets, plan their journeys, and check the availability of trains and buses in their area.<br>
+                     </p>
+                     <hr>
+                     <h3 id="sr" class="mt-4 mb-4">System Requirements</h3>
+                     <p class="card-text">&emsp;Transport for Wales has 248 stations located nationally and a total of 481 staff members, according to their 2020/2021 annual report. Five million passenger journeys were completed during the 2020/2021 financial year (Transport for Wales, 2021); this has increased to 17,6 million journeys completed between 2021-2022, an approximate average of 48,000 journeys a day. Regarding ticket-purchasing facilities, TfW has 42 booking stations, eight rail agents, seven at stations and one at a tourist centre, 234 ticket vending machines, and a website and mobile application accessible to anyone with a smartphone (Transport for Wales, 2021).<br>
+                     </p>
+                     <hr>
+                     <h3 id="per" class="mt-4 mb-4">Performance</h3>
+                     <p class="card-text">&emsp;The ticketing system should be operational 24 hours a day, seven days a week. Upon purchasing a ticket, there should be at least a 1-second response at the ticket vending machines and, on the website, and mobile application. Real-time information should be provided on trains and buses' arrival and departure times. Real-time data on the capacity of trains and buses should be accessible to passengers and customer service advisors. The mobile application and website should have a 99.9% uptime and be accessible to multiple users at any time.<br><br>
+                        &emsp;Regarding security, the database should be password-protected with optional multi-factor authentication option through an opt-in, and access privileges should be appropriate to the user view (Connolly, 2014). The passenger should only be able to see information regarding tickets they wish to purchase and past information on tickets they have purchased.<br><br>
+                        &emsp;KTK proposed using data lakes to store real-time data in the initial database proposal. This is crucial to the ticketing system as real-time data informs on key performance indicators such as arrival times, departure times, and possible delays. Historical data stored in the data warehouse will be used to inform on trends which will be essential in future transport planning initiatives. To better track traveller journeys, and the trends of travellers, having relationships between the customer, ticket purchases, route, and mode of transport entities would derive this data. Therefore, this can be explained as follows, one customer purchases one ticket for a route on one mode of transport. Over time this data can build traveller trends and patterns of those using Transport for Wales.<br><br>
+                        &emsp;However, on closer inspection of the database design model presented in the initial design report, some areas were not fully presented. Following the findings, other entities would need to be included in the ticketing system to function in a manner that meets the organisational needs. A transaction details entity could be included that captures details of the transactions made. A timetable entity that is connected to the tickets purchased entity and route entity. As mentioned earlier, the emphasis on ensuring that customers are given optimum experience depends on their ability to plan their journeys, and being informed on travel times is crucial to the overall transport experience. Equally significant is establishing a client card entity which will be used to store the details of a passenger and track their usage trends and patterns. In this manner, TfW will be able to categorise passenger trends by demographics and geographical locations and use this information to develop tailor-made transport solutions and service offerings.<br><br>
+                        &emsp;Though, there is a ticket-purchased entity, there was also a need to include a ticket-type entity. TfW offers a variety of ticket types for every type of traveller. Therefore, with each transaction, the passenger purchases a ticket type, and this ticket type is linked to a route and timetable.<br><br>
+                        &emsp;Regarding implementing practices that improve special needs people's experiences, a Needs entity can be implemented that captures the mobility limitations of travellers. For those requiring assistance during travel, the information is captured when making a ticket purchase. This entity serves as an aid for people with mobility issues and allows TfW to plan accordingly to accommodate passengers who need assistance.<br>
+                     </p>
+                     <hr>
+                     <h3 id="erd" class="mt-4 mb-4">Entity Relationship Diagram</h3>
+                     <p class="card-text">&emsp;Following the findings, the entity relationship diagram will incorporate the entities that were mentioned. Below is a redesigned entity-relationship diagram for the ticketing system.   
+                     </p>
+                     <div class="justify-content-center text-center">
+                        <img src="/assets/erd2.jpg" class="img-fluid">
+                        </div>
+                     <hr>
+                     <h3 id="dp" class="mt-4 mb-4">Data Protection</h3>
+                     <p class="card-text">&emsp;Information and database systems require the business and technical implementation of data protection principles. This applies directly to the TfW ticketing system due to the heavy presence of personal data, such as customers' biodata, financial (e.g. transactions) and geolocation data. The data protection requirements are outlined in the UK's Data Protection Act 2018, also known as UK GDPR, which transposes into national law the General Data Protection Regulation of the European Union. Considering that EU Regulations set out the framework and member states have the right to be more restrictive while transposing them into national law, UK GDPR is based on seven fundamental principles, in contrast to EU GDPR, which is based on only five.<br><br>
+                        &emsp;The principles of UK GDPR are "Lawfulness, fairness and transparency", "Purpose limitation", "Data minimisation", "Accuracy", "Storage limitation", "Integrity and confidentiality (security)", and "Accountability" (Information Commissioner's Office, n.d). In addition to that, additional provisions are added for governmental services. Even though the transport network is not entirely state-owned, the TfW, whose primary responsibility is to oversee the
+                        transportation network and contractors, is a governmental service owned by the Ministers of Wales. Therefore, such provisions directly apply (Transport for Wales, n.d.).<br><br>
+                        &emsp;As a general guideline, the GDPR implementation and all necessary compliance need to be overseen by an accredited Data Protection Officer (DPO). The role of a DPO is to ensure compliance with data protection rules and regulations (regardless of the type of data, staff data, customer data, supplier data, or else) (European Data Protection Supervisor, n.d).<br><br>
+                        &emsp;In addition, considering the general system design, the principles of "Lawfulness, fairness and transparency" (lawful, fair and transparent data processing), "Purpose limitation" (data processing for explicit and well-defined purposes), and "Data minimisation" (data collection and data processing only for the data absolutely necessary for the organisation’s functions) are ensured due to the limited data collected and processed, which are aligned with the company's mandate.<br><br>
+                        &emsp;Moreover, due to the front-end application, users also have complete control over their data (including their right to be forgotten), as they can update or delete unnecessary data. Account deletion takes place by removing all personal data and anonymising the remaining identification parameters (e.g., transactions) for auditing reasons. TfW should apply the GDPR principles while balancing the audit needs as a governmental body.<br><br>
+                        &emsp;The "Storage Limitation" refers to storing data no longer than absolutely necessary. For this reason, dormant accounts will be deleted and anonymised, ensuring maximum data protection for the data subjects, even if they do not have or do not want to have access to their account anymore.<br><br>
+                        &emsp;Finally, the security aspects are handled in the front end, by applying a strong password policy, utilising off the self well tested features (e.g., android biometrics) and highly suggesting the use of two-factor-authentication (one-time password). On the back-end, the use of MS SQL server transfers that security responsibility to Microsoft, due to expertise and specialised personnel of database security aspects.<br>
+                     </p>
+                     <hr>
+                     <h3 id="rec" class="mt-4 mb-4">Recommendations</h3>
+                     <p class="card-text">&emsp;For transport for Wales to meet its strategic objectives as laid out in the Llwbr Newydd – the Wales Transport Strategy 2021 of an integrated transport system supported by a dynamic ticketing system, the following need to be considered. The ticketing system is available on multiple purchase channels, mainly mobile applications, websites, and ticketing vending machines located at TfW stations and selected retail outlets that sell tickets. All these ticketing purchasing channels need to operate smoothly to avoid lag and delays. The thousands of transactions that occur daily or hourly need to be quickly accessed and analysed and for this, a Data Lake is recommended. This will allow for a combination of structured and unstructured data to be accessed. However, a data warehouse is still recommended for the storage of processed data that will be used by users such as the transport planner for further analysis.<br><br>
+                        &emsp;Transport for Wales must remain cognisant of the GDPR directives and ensure that data protection rules are upheld. No unauthorised access to data is allowed and strong security policies are to be put in place to protect sensitive information from hackers and prying eyes.<br><br>
+                        &emsp;A strong data culture should be built within the TFW, this means that priority is given to data and analytics as the driving force for insights and innovation, which ultimately leads to better decision-making. In addition, data literacy needs to be built within the organisation. Those with access to data should be able to ask the right questions, validate assumptions and make decisions ethically and efficiently (Southekal, 2022).<br><br>
+                        &emsp;Lastly TFW should invest in quality data management software that will help them derive the insights that they need from the data.<br>
+                     </p>
+                     <hr>
+                     <h3 id="con" class="mt-4 mb-4">Conclusion</h3>
+                     <p class="card-text">&emsp;To sum up, KTK Consultants aim to develop a ticketing system for transport of Wales which will be customised to meet TfW's requirements, aiming to raise the quality of the traveller's experience. The contents of the summary have been developed after carefully considering the latest project management practices and utilising well-established technologies while considering data protection considerations based on the Data Protection Act pillars through legal, compliance (e.g., DPO) and technical (e.g., two-factor authentication) interventions. The use cases used have been customer-centric, aiming to provide a satisfying user experience (UX) while at the same time respecting the traveller's time through the provision of feedback for the latest travel conditions (delays, occupancy, timetable), fully respecting their privacy. The updated logical design addresses auditing concerns (e.g., transactions) and touches upon data storage, a subject that overlaps both with data protection and technical implementation, to provide valuable business insights. Overall, the system proposed by KTK consultants will bring a change of era on how the ticketing system of TfW was working so far, while providing a smooth transition, and provide the necessary data for data-driven decisions of the executives of TfW.<br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <div class="accordion mx-3 mb-3 mt-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               References
+               </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">L. Finžgar and M. Trebar, "Use of NFC and QR code identification in an electronic ticket system for public transport," SoftCOM 2011, 19th International Conference on Software, Telecommunications and Computer Networks, 2011, pp. 1-6.<br><br>
+                  Transport for Wales. (2022) <i>Transport for Wales Rail Service Quality Report.</i> Available from: <a target="_blank" href="https://tfw.wales/about-us/transparency/publications/transport-for-wales-rail-service-quality-report-2021-22" rel="noopener noreferrer">https://tfw.wales/about-us/transparency/publications/transport-for-wales-rail-service-quality-report-2021-22</a>. [Accessed 2 December 2022].<br><br>
+                  Connolly, T., Begg, C., Begg, C., & Connolly, T., (2014), <i>Database Systems: a Practical Approach to Design, Implementation, and Management.</i> Global E ed. Harlow: Pearson Education Limited. Available from: ProQuest Ebook Central. [3 December 2022].<br><br>
+                  Information Commissioner's Office. (n.d) The principles. Available from: <a target="_blank" href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/principles/" rel="noopener noreferrer">https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/principles/</a>. [Accessed 3 December 2022].<br><br>
+                  Transport for Wales. (n.d.) Transport for Wales. Available from: <a target="_blank" href="https://tfw.wales/about-us/our-story" rel="noopener noreferrer">https://tfw.wales/about-us/our-story</a>. [Accessed 3 December 2022].<br><br>
+                  European Data Protection Supervisor, (n.d.) Data Protection Officer (DPO). Available from: <a target="_blank" href="https://edps.europa.eu/data-protection/data-protection/reference-library/data-protection-officer-dpo_en" rel="noopener noreferrer">https://edps.europa.eu/data-protection/data-protection/reference-library/data-protection-officer-dpo_en</a>. [Accessed 4 December 2022].<br><br>
+                  Data Culture: What It Is and How To Make It Work, (Southekal, P), 2022, Available at: <a target="_blank" href="https://www.forbes.com/sites/forbestechcouncil/2022/06/27/data-culture-what-it-is-and-how-to-make-it-work/?sh=2307330b2096" rel="noopener noreferrer">https://www.forbes.com/sites/forbestechcouncil/2022/06/27/data-culture-what-it-is-and-how-to-make-it-work/?sh=2307330b2096</a>. [Accessed 4 December 2022].<br><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="py-3 my-4">
+         <ul class="nav justify-content-center">
+            <li class="nav-item">
+               <a href="#" class="icon-link icon-link-hover"
+                  style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0);">
+                  Back to top
+                  <svg class="bi bi-arrow-up" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+         <p class="text-center">© 2023 Panagiotis KOILAKOS</p>
+      </footer>
+   </body>
+</html>

@@ -1,6 +1,7 @@
 .hover-txt {
     color: #0072BC !important;
 }
+
 .nav {
     background-color: #0072BC ;
     padding-top: 10px;
@@ -87,6 +88,11 @@ h1, h2:not(.accordion-header) {
     color:#0072BC !important;
     font-weight: 600 !important;
 }
+
+h3 {
+    color:#0072BC !important;
+    font-weight: 600 !important;
+}
 h4>span {
     color: #0072bc !important;
     font-weight: 600 !important;
@@ -167,4 +173,19 @@ h4>span {
 .cust-img2 {
     max-height: 30%;
     max-width: 30%;
+}
+
+.btn-pdf {
+    padding-left: 25px;
+}
+
+.go-back {
+    background-color: transparent !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+.go-back:hover {
+    background-color: white !important;
+    color: #0072BC !important;
 }
