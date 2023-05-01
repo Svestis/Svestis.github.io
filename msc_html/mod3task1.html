@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Panagiotis Koilakos - MSc in Data Science - Deciphering Big Data</title>
+      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+      <script src="./js.js" defer></script>
+      <meta name="description" property="og:description" content="Since a young boy, I had a passion to help people and chose to volunteer in order to support the people of this world, local communities, and the environment. Then studies in Informatics came along the way.
+         For quite some time I was wondering “How could I combine both of them?” Then it clicked! Working as a Senior Data Management Assistant at UNHCR made sense. So here I am, fulfilling my two passions by supporting the people that were forced to flee by using my experience in Informatics.">
+      <meta name="keywords" content="Portfolio, ePortfolio, Data Vizualization, Data Management, Data Science, Computer Science, Informatics, CV, Python, SQL">
+      <meta property="og:url" content="svestis.github.io">
+      <meta property="og:title" content="Panagiotis Koilakos - ePortfolio">
+      <meta property="og:type" content="profile">
+      <link rel="shortcut icon" href="https://img.icons8.com/small/344/user-male-circle.png">
+   </head>
+   <body>
+      <div class="heading">
+         <div class="container">
+            <h1 class="text-body-emphasis">Panagiotis Koilakos</h1>
+            <p class="lead">
+               Associate Operational Data Management Officer, UNHCR
+            </p>
+            <div class="icons">
+               <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
+               <i class="fab fa-linkedin zoom-icon"></i>
+               </a>
+               <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
+               <i class="fab fa-github zoom-icon"></i>
+               </a>
+               <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
+               <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
+               </a>
+            </div>
+            <a href="mod3.html#task1" type="button" class="btn btn-primary icon-link go-back border-1 icon-link icon-link-hover mb-3 mt-4" style="--bs-icon-link-transform: translate3d(-0.25rem, 0, 0);">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+               </svg>
+               Go back
+            </a>
+         </div>
+      </div>
+      <h1 class="mt-4 mb-4">MSc in Data Science - Deciphering Big Data</h1>
+      <h2 class="mt-4 mb-4">Normalisation and Data Build Task</h2>
+      <div class="accordion mx-3 mb-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button  id="contents" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               Contents
+               </button>
+            </h2>
+            <div  id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">
+                  1. <a href="#norm" rel="noopener noreferrer" class="hover-txt no-decor">Normalisation Task</a><br>
+                  &emsp;1.a. <a href="#NF1" rel="noopener noreferrer" class="hover-txt no-decor">1NF</a><br>
+                  &emsp;1.b. <a href="#NF2" rel="noopener noreferrer" class="hover-txt no-decor">2NF</a><br>
+                  &emsp;1.c. <a href="#NF3" rel="noopener noreferrer" class="hover-txt no-decor">3NF</a><br>
+                  &emsp;1.d. <a href="#ref" rel="noopener noreferrer" class="hover-txt no-decor">References</a><br>
+                  2. <a href="#datbuil" rel="noopener noreferrer" class="hover-txt no-decor">Data Build Task</a><br>
+                  &emsp;2.a. <a href="#normdat" rel="noopener noreferrer" class="hover-txt no-decor">Normalisation</a><br>
+                  &emsp;2.b. <a href="#dbc" rel="noopener noreferrer" class="hover-txt no-decor">Database Creation</a><br>
+                  &emsp;2.c. <a href="#di" rel="noopener noreferrer" class="hover-txt no-decor">Data Insertion</a><br>
+                  &emsp;2.d. <a href="#ri" rel="noopener noreferrer" class="hover-txt no-decor">Referential Integrity</a><br>
+                  &emsp;2.e. <a href="#fnwt" rel="noopener noreferrer" class="hover-txt no-decor">Final Notes and Working Theory</a><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <h3 id="norm" class="mt-4 mb-4">Normalization Task</h3>
+                     <p class="card-text">&emsp;Database normalisation can be described as the process of organising data in a database or table, following a set of standard rules to reduce redundancy, speed up query processing and reduce required disk space. We can also think about database normalisation as a way to organise tables in an anticipated manner for the database users, such as, for example, having only contact details in a contact details table and not invoice number (Microsoft, 2023). The rules applied are called normal forms (NF) and is generally acceptable for data in a database to be organised till the 3rd Normal Form. More rules beyond the 3rd Normal Form do exist, such as the Boyce-Cood Normal Form or, as otherwise called, the 3.5 Normal Form, but are “rarely used outside the academic context” (Rouse, 2014).<br><br>
+                        &emsp;In this exercise, we are provided with an initial data table in an un-normalised form. The task is to normalise the table down to the 3rd Normal Form by showing and explaining each subsequent step (1st Normal Form, 2nd Normal Form, 3rd Normal Form).<br>
+                     </p>
+                     <div class="justify-content-center text-center">
+                        <img src="/assets/mod3/mod3_norm_data_task/tbl1.png" class="img-fluid" alt="Table">
+                     </div>
+                     <br>
+                     <p class="card-text">&emsp;The table headers look as per the below table and is in 0NF (Un-normalised):
+                     </p>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Student Name</th>
+                              <th scope="col">Exam Score</th>
+                              <th scope="col">Support</th>
+                              <th scope="col">Date of Birth</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Exam Boards</th>
+                              <th scope="col">Teacher Name</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Bob Baker</td>
+                              <td>78</td>
+                              <td>No</td>
+                              <td>25/08/2001</td>
+                              <td>Computer Science<br>Maths<br>Physics</td>
+                              <td>BCS<br>EdExcel<br>OCR</td>
+                              <td>Mr Jones<br>Ms Parker<br>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Sally Davies</td>
+                              <td>55</td>
+                              <td>Yes</td>
+                              <td>02/10/1999</td>
+                              <td>Maths<br>Biology<br>Music</td>
+                              <td>AQA<br>WJEC<br>AQA</td>
+                              <td>Mr Parker<br>Mr Patel<br>Ms Daniels</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Mark Hanmill</td>
+                              <td>90</td>
+                              <td>No</td>
+                              <td>05/06/1995</td>
+                              <td>Computer Science<br>Maths<br>Physics</td>
+                              <td>BCS<br>EdExcel<br>OCR</td>
+                              <td>Mr Jones<br>Ms Parker<br>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Anas Ali</td>
+                              <td>70</td>
+                              <td>No</td>
+                              <td>03/08/1990</td>
+                              <td>Maths<br>Physics<br>Biology</td>
+                              <td>AQA<br>OCR<br>WJEC</td>
+                              <td>Ms Parker<br>Mr Peters<br>Mrs Patel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Cheuk Yin</td>
+                              <td>45</td>
+                              <td>Yes</td>
+                              <td>01/05/2022</td>
+                              <td>Computer Science<br>Maths<br>Music</td>
+                              <td>BCS<br>EdExcel<br>AQA</td>
+                              <td>Mr Jones<br>Ms Parker<br>Ms Daniels</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <h4 id="NF1" class="mt-4 mb-4">1NF</h4>
+                     <p class="card-text">&emsp;A table is considered to be in 1NF, if it (Hillyer, 2005):<br>
+                        &emsp;&emsp;1. Contains only atomic/single values in each and every cell (e.g. a cell cannot have the date of birth and date of school graduation at the same time or the address and the phone number at the same time);<br>
+                        &emsp;&emsp;2. The data type/domain attribute needs to be of the same type for each column (e.g. a cell cannot have date values and integer or text values at the same time);<br>
+                        &emsp;&emsp;3. Each column name should be unique and not be repeated.<br><br>
+                        The provided table presents the following issue, which violates the constraint of atomic values:<br>
+                        &emsp;&emsp;- Columns ‘Course Name’, ‘Exam Boards’, and ‘Teacher Name’ are not atomic as they contain multiple items. For this exercise, names, we will be considered atomic values as ‘full names’.<br><br>
+                        None of the other two constraints are violated. <br><br>
+                        We can also notice that duplicate values in each cell are horizontally distributed (a duplicate value in the Course Name column corresponds to a value in the Exam Board column and the Teacher Name column).<br><br>
+                        In order to solve the issues, we split our table and reformat it by duplicating each row and keeping only the atomic values. In cells where there are no atomic values, we keep the same data:<br>
+                     </p>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Student Name</th>
+                              <th scope="col">Exam Score</th>
+                              <th scope="col">Support</th>
+                              <th scope="col">Date of Birth</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Exam Boards</th>
+                              <th scope="col">Teacher Name</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Bob Baker</td>
+                              <td>78</td>
+                              <td>No</td>
+                              <td>25/08/2001</td>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Bob Baker</td>
+                              <td>78</td>
+                              <td>No</td>
+                              <td>25/08/2001</td>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Bob Baker</td>
+                              <td>78</td>
+                              <td>No</td>
+                              <td>25/08/2001</td>
+                              <td>Physics</td>
+                              <td>CR</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Sally Davies</td>
+                              <td>55</td>
+                              <td>Yes</td>
+                              <td>02/10/1999</td>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                              <td>Mr Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Sally Davies</td>
+                              <td>55</td>
+                              <td>Yes</td>
+                              <td>02/10/1999</td>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                              <td>Mr Patel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Sally Davies</td>
+                              <td>55</td>
+                              <td>Yes</td>
+                              <td>02/10/1999</td>
+                              <td>Music</td>
+                              <td>AQA</td>
+                              <td>Ms Daniels</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Mark Hanmill</td>
+                              <td>90</td>
+                              <td>No</td>
+                              <td>05/06/1995</td>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Mark Hanmill</td>
+                              <td>90</td>
+                              <td>No</td>
+                              <td>05/06/1995</td>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Mark Hanmill</td>
+                              <td>90</td>
+                              <td>No</td>
+                              <td>05/06/1995</td>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Anas Ali</td>
+                              <td>70</td>
+                              <td>No</td>
+                              <td>03/08/1990</td>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Anas Ali</td>
+                              <td>70</td>
+                              <td>No</td>
+                              <td>03/08/1990</td>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Anas Ali</td>
+                              <td>70</td>
+                              <td>No</td>
+                              <td>03/08/1990</td>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                              <td>Mrs Patel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Cheuk Yin</td>
+                              <td>45</td>
+                              <td>Yes</td>
+                              <td>01/05/2022</td>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Cheuk Yin</td>
+                              <td>45</td>
+                              <td>Yes</td>
+                              <td>01/05/2022</td>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Cheuk Yin</td>
+                              <td>45</td>
+                              <td>Yes</td>
+                              <td>01/05/2022</td>
+                              <td>Music</td>
+                              <td>AQA</td>
+                              <td>Ms Daniels</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <p class="card-text">&emsp;With a composite primary key in the columns Student Number and Course Name, the above table satisfies all the requirements of the 1st Normal Form; therefore, it is in 1NF. Each observation (column) may have duplicate values, but each instance (row) is unique.<br><br>
+                     </p>
+                     <h4 id="NF2" class="mt-4 mb-4">2NF</h4>
+                     <p class="card-text">&emsp;A table is considered to be in 2NF, if it (Hillyer, 2005):<br>
+                        &emsp;&emsp;1. Is already in 1NF;<br>
+                        &emsp;&emsp;2. Has no partial dependencies, meaning that every non-candidate key column should depend on the whole identified candidate key (potential primary key).<br><br>
+                        The provided table presents the following issues violating the constraints of partial dependency:<br>
+                        &emsp;&emsp; - With identified multi-value candidate key of ‘Student Number’ and ‘Course Name’, we observe that the columns ‘Exam Boards’ and ‘Teacher Name’ depend only on a part of the candidate key which is the ‘Course Name’)<br><br>
+                        In order to solve the issue, we will need to split our table into two tables by adding a foreign key to connect the two tables:<br>
+                     </p>
+                     <h5 class="mt-4 mb-4"><b>Student table</b></h5>
+                     With primary key the Student Number<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Student Name</th>
+                              <th scope="col">Exam Score</th>
+                              <th scope="col">Support</th>
+                              <th scope="col">Date of Birth</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Bob Baker</td>
+                              <td>78</td>
+                              <td>No</td>
+                              <td>25/08/2001</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Sally Davies</td>
+                              <td>55</td>
+                              <td>Yes</td>
+                              <td>02/10/1999</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Mark Hanmill</td>
+                              <td>90</td>
+                              <td>No</td>
+                              <td>05/06/1995</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Anas Ali</td>
+                              <td>70</td>
+                              <td>No</td>
+                              <td>03/08/1990</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Cheuk Yin</td>
+                              <td>45</td>
+                              <td>Yes</td>
+                              <td>01/05/2022</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <h5 class="mt-4 mb-4"><b>Course table</b></h5>
+                     With composite primary key the Student Number and Course Name<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Exam Boards</th>
+                              <th scope="col">Teacher Name</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Physics</td>
+                              <td>CR</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                              <td>Mr Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                              <td>Mr Patel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                              <td>Ms Daniels</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                              <td>Mrs Patel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                              <td>Ms Daniels</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <p class="card-text">&emsp;The duplicate values have also been removed from the Student table. We can observe that the Course table has the same composite key as before, creating conflict with the 2NF requirements, as there are partial dependencies with the Teacher Name being dependant on the course name only. For this reason we split the table further:<br>
+                     </p>
+                     <h5 class="mt-4 mb-4"><b>Teacher table</b></h5>
+                     With primary key the Course Name<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Teacher Name</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Computer Science</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <td>Maths</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <td>Physics</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <td>Biology</td>
+                              <td>Mr Patel</td>
+                           </tr>
+                           <tr>
+                              <td>Music</td>
+                              <td>Ms Daniels</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <h5 class="mt-4 mb-4"><b>Course table</b></h5>
+                     With composite primary key the Course Name and Student Number<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Exam Boards</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Physics</td>
+                              <td>CR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <p class="card-text">&emsp;The final tables are the below:<br>
+                     </p>
+                     <h5 class="mt-4 mb-4"><b>Teacher table</b></h5>
+                     With primary key the Course Name<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Teacher Name</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Computer Science</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <td>Maths</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <td>Physics</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <td>Biology</td>
+                              <td>Mr Patel</td>
+                           </tr>
+                           <tr>
+                              <td>Music</td>
+                              <td>Ms Daniels</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <h5 class="mt-4 mb-4"><b>Course table</b></h5>
+                     With composite primary key the Course Name and Student Number<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Exam Boards</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Physics</td>
+                              <td>CR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <h5 class="mt-4 mb-4"><b>Student table</b></h5>
+                     With primary key the Student Number<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Student Name</th>
+                              <th scope="col">Exam Score</th>
+                              <th scope="col">Support</th>
+                              <th scope="col">Date of Birth</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Bob Baker</td>
+                              <td>78</td>
+                              <td>No</td>
+                              <td>25/08/2001</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Sally Davies</td>
+                              <td>55</td>
+                              <td>Yes</td>
+                              <td>02/10/1999</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Mark Hanmill</td>
+                              <td>90</td>
+                              <td>No</td>
+                              <td>05/06/1995</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Anas Ali</td>
+                              <td>70</td>
+                              <td>No</td>
+                              <td>03/08/1990</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Cheuk Yin</td>
+                              <td>45</td>
+                              <td>Yes</td>
+                              <td>01/05/2022</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <p class="card-text">&emsp;The above tables satisfy all the requirements of the 2nd Normal Form therefore they are in 2NF.<br>
+                     </p>
+                     <h4 id="NF3" class="mt-4 mb-4">3NF</h4>
+                     <p class="card-text">&emsp;For a table to be considered in 3NF it needs to (Hillyer, 2005):<br>
+                        &emsp;&emsp;1. Be already in 2NF;<br>
+                        &emsp;&emsp;2. Have no transitive dependencies, meaning that every non key column should not depend on non-key columns.<br><br>
+                        Due to the way that 2NF was achieved, all the tables already satisfy the 3rd Normal Form, and therefore they are in 3NF.<br><br>
+                        The final tables are:<br>
+                     </p>
+                     <h5 class="mt-4 mb-4"><b>Teacher table</b></h5>
+                     With primary key the Course Name<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Teacher Name</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Computer Science</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <td>Maths</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <td>Physics</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <td>Biology</td>
+                              <td>Mr Patel</td>
+                           </tr>
+                           <tr>
+                              <td>Music</td>
+                              <td>Ms Daniels</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <h5 class="mt-4 mb-4"><b>Course table</b></h5>
+                     With composite primary key the Course Name and Student Number<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Exam Boards</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Physics</td>
+                              <td>CR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <h5 class="mt-4 mb-4"><b>Student table</b></h5>
+                     With primary key the Student Number<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Student Name</th>
+                              <th scope="col">Exam Score</th>
+                              <th scope="col">Support</th>
+                              <th scope="col">Date of Birth</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Bob Baker</td>
+                              <td>78</td>
+                              <td>No</td>
+                              <td>25/08/2001</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Sally Davies</td>
+                              <td>55</td>
+                              <td>Yes</td>
+                              <td>02/10/1999</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Mark Hanmill</td>
+                              <td>90</td>
+                              <td>No</td>
+                              <td>05/06/1995</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Anas Ali</td>
+                              <td>70</td>
+                              <td>No</td>
+                              <td>03/08/1990</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Cheuk Yin</td>
+                              <td>45</td>
+                              <td>Yes</td>
+                              <td>01/05/2022</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+                     <div class="accordion mx-3 mb-3 mt-3" id="ref">
+                        <div class="accordion-item">
+                           <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              References
+                              </button>
+                           </h2>
+                           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body module1accordion">Babar, Z. (n.d.) What is BCNF?. Available from: <a target="_blank" href="https://www.educative.io/answers/what-is-bcnf" rel="noopener noreferrer">https://www.educative.io/answers/what-is-bcnf</a>. [Accessed 28 April 2023].<br><br>
+                                 Hillyer, M. (2005) An Introduction to Database Normalization. Available from: <a target="_blank" href="https://users.dcc.uchile.cl/~mnmonsal/cc42a/guias/intronorm.pdf" rel="noopener noreferrer">https://users.dcc.uchile.cl/~mnmonsal/cc42a/guias/intronorm.pdf</a>. [Accessed 28 April 2023].<br><br>
+                                 Microsoft. (2023) Description of the database normalization basics. Available from: <a target="_blank" href="https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description" rel="noopener noreferrer">https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description</a>. [Accessed 28 Aprik 2023].<br><br>
+                                 Rouse, M. (2014) What Does Fourth Normal Form Mean?. Available from: <a target="_blank" href="https://www.techopedia.com/definition/19453/fourth-normal-form-4nf" rel="noopener noreferrer">https://www.techopedia.com/definition/19453/fourth-normal-form-4nf</a>. [Accessed 28 April 2023].<br><br>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                     <h3 id="datbuil" class="mt-4 mb-4">Data Build Task</h3>
+                     <p class="card-text">&emsp;The data build task requires to create the actual relational database based on the tables of the Normalisation Task. The database should have the proper schema created, with linked tables mapped through the foreign keys, and primary key properly recorded. The database should enforce referential integrity.<br>
+                     </p>
+                     <h4 id="normdat" class="mt-4 mb-4">Normalisation</h4>
+                     <p class="card-text">&emsp;The tables that we start with from the Normalisation Task are the below:<br>
+                     </p>
+                     <h5 class="mt-4 mb-4"><b>Teacher table</b></h5>
+                     With primary key the Course Name<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Teacher Name</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Computer Science</td>
+                              <td>Mr Jones</td>
+                           </tr>
+                           <tr>
+                              <td>Maths</td>
+                              <td>Ms Parker</td>
+                           </tr>
+                           <tr>
+                              <td>Physics</td>
+                              <td>Mr Peters</td>
+                           </tr>
+                           <tr>
+                              <td>Biology</td>
+                              <td>Mr Patel</td>
+                           </tr>
+                           <tr>
+                              <td>Music</td>
+                              <td>Ms Daniels</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <h5 class="mt-4 mb-4"><b>Course table</b></h5>
+                     With composite primary key the Course Name and Student Number<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Course Name</th>
+                              <th scope="col">Exam Boards</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Physics</td>
+                              <td>CR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Maths</td>
+                              <td>AQA</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Physics</td>
+                              <td>OCR</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Biology</td>
+                              <td>WJEC</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Computer Science</td>
+                              <td>BCS</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Maths</td>
+                              <td>EdExcel</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Music</td>
+                              <td>AQA</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <h5 class="mt-4 mb-4"><b>Student table</b></h5>
+                     With primary key the Student Number<br><br>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">Student Number</th>
+                              <th scope="col">Student Name</th>
+                              <th scope="col">Exam Score</th>
+                              <th scope="col">Support</th>
+                              <th scope="col">Date of Birth</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1001</th>
+                              <td>Bob Baker</td>
+                              <td>78</td>
+                              <td>No</td>
+                              <td>25/08/2001</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1002</th>
+                              <td>Sally Davies</td>
+                              <td>55</td>
+                              <td>Yes</td>
+                              <td>02/10/1999</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1003</th>
+                              <td>Mark Hanmill</td>
+                              <td>90</td>
+                              <td>No</td>
+                              <td>05/06/1995</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1004</th>
+                              <td>Anas Ali</td>
+                              <td>70</td>
+                              <td>No</td>
+                              <td>03/08/1990</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">1005</th>
+                              <td>Cheuk Yin</td>
+                              <td>45</td>
+                              <td>Yes</td>
+                              <td>01/05/2022</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     Even though the database was adequately normalized we have also added an additional table name Exam Board, in order to ensure referential integrity. There was no need for an additional course table listing only the courses as the Teacher table fulfils that purpose.
+                     <h4 id="dbc" class="mt-4 mb-4">Database Creation</h4>
+                     <p class="card-text">&emsp;The database tables are in the below format:<br>
+                     </p>
+                     <div class="justify-content-center text-center">
+                        <img src="/assets/mod3/mod3_norm_data_task/schema.png" class="img-fluid" alt="Schema">
+                     </div>
+                     <br>
+                     The tables are created in SSMS (SQL Server). The script can be found <a href="/assets/mod3/mod3_norm_data_task/database_script.sql" target="_blank">here</a>.
+                     <h4 id="di" class="mt-4 mb-4">Data Insertion</h4>
+                     In order to check that our tables work as intended the data were added in the tables through <a href="/assets/mod3/mod3_norm_data_task/Instert_script.sql" target="_blank">this</a> script.
+                     <h4 id="ri" class="mt-4 mb-4">Referential Integrity</h4>
+                     <p class="card-text">&emsp;The following checks have been performed in the created table, in order to ensure that referential integrity is properly enforced:<br>
+                        &emsp;&emsp;1. Ensuring the no duplicate teachers can be added in the Teacher table;<br>
+                        &emsp;&emsp;2. Ensuring that no duplicate students can be added in the Student table;<br>
+                        &emsp;&emsp;3. Ensuring that no duplicate exam boards can be added in the Exam Board table;<br>
+                        &emsp;&emsp;4. Ensuring that no duplicate combinations of student number and course name can be added in the courses table;<br>
+                        &emsp;&emsp;5. Ensuring the added row in the courses table represents existing students (student table), courses (teachers table) and exam boards (exam board table);<br><br>
+                        The script used for the testing can be found <a href="/assets/mod3/mod3_norm_data_task/referential%20integrity.sql" target="_blank">here</a>.
+                     </p>
+                     <h4 id="fnwt" class="mt-4 mb-4">Final Notes and Working Theory</h4>
+                     <p class="card-text">&emsp;The final notes and the working theory is the following:<br>
+                        &emsp;&emsp;-	Additional tables created are to ensure referential integrity (e.g. exam board);<br>
+                        &emsp;&emsp;-	It is good practice to create global unique identifiers (UUIDs/GUIDs) in order to ensure uniqueness of primary IDs. This would also avoid the presence of composite keys. Though these have not been created as we followed the exact columns provided in the exercise;<br>
+                        &emsp;&emsp;-	Normalization may be performed in different ways and results between two database designers may differ;<br>
+                        &emsp;&emsp;-	To ensure referential integrity apart from creating the primary and secondary keys we could also follow a different approach where the respective record in created automatically if it is missing on a table, during the insert queries. For example, in our design if we try to add a new student with a course under the table courses the query will return an error as the new student needs to be created in the student table first. If we create a trigger then we can ask the database to create the new student (providing some additional details), instead of returning the error.<br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <div class="accordion mx-3 mb-3 mt-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               References
+               </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">L. Finžgar and M. Trebar, "Use of NFC and QR code identification in an electronic ticket system for public transport," SoftCOM 2011, 19th International Conference on Software, Telecommunications and Computer Networks, 2011, pp. 1-6.<br><br>
+                  Transport for Wales. (2022) <i>Transport for Wales Rail Service Quality Report.</i> Available from: <a target="_blank" href="https://tfw.wales/about-us/transparency/publications/transport-for-wales-rail-service-quality-report-2021-22" rel="noopener noreferrer">https://tfw.wales/about-us/transparency/publications/transport-for-wales-rail-service-quality-report-2021-22</a>. [Accessed 2 December 2022].<br><br>
+                  Connolly, T., Begg, C., Begg, C., & Connolly, T., (2014), <i>Database Systems: a Practical Approach to Design, Implementation, and Management.</i> Global E ed. Harlow: Pearson Education Limited. Available from: ProQuest Ebook Central. [3 December 2022].<br><br>
+                  Information Commissioner's Office. (n.d) The principles. Available from: <a target="_blank" href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/principles/" rel="noopener noreferrer">https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/principles/</a>. [Accessed 3 December 2022].<br><br>
+                  Transport for Wales. (n.d.) Transport for Wales. Available from: <a target="_blank" href="https://tfw.wales/about-us/our-story" rel="noopener noreferrer">https://tfw.wales/about-us/our-story</a>. [Accessed 3 December 2022].<br><br>
+                  European Data Protection Supervisor, (n.d.) Data Protection Officer (DPO). Available from: <a target="_blank" href="https://edps.europa.eu/data-protection/data-protection/reference-library/data-protection-officer-dpo_en" rel="noopener noreferrer">https://edps.europa.eu/data-protection/data-protection/reference-library/data-protection-officer-dpo_en</a>. [Accessed 4 December 2022].<br><br>
+                  Data Culture: What It Is and How To Make It Work, (Southekal, P), 2022, Available at: <a target="_blank" href="https://www.forbes.com/sites/forbestechcouncil/2022/06/27/data-culture-what-it-is-and-how-to-make-it-work/?sh=2307330b2096" rel="noopener noreferrer">https://www.forbes.com/sites/forbestechcouncil/2022/06/27/data-culture-what-it-is-and-how-to-make-it-work/?sh=2307330b2096</a>. [Accessed 4 December 2022].<br><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="py-3 my-4">
+         <ul class="nav justify-content-center">
+            <li class="nav-item">
+               <a href="#" class="icon-link icon-link-hover"
+                  style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0);">
+                  Back to top
+                  <svg class="bi bi-arrow-up" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+         <p class="text-center">© 2023 Panagiotis KOILAKOS</p>
+      </footer>
+   </body>
+</html>

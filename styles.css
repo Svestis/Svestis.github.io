@@ -1,7 +1,6 @@
 .hover-txt {
     color: #0072BC !important;
 }
-
 .nav {
     background-color: #0072BC ;
     padding-top: 10px;
@@ -88,7 +87,6 @@ h1, h2:not(.accordion-header) {
     color:#0072BC !important;
     font-weight: 600 !important;
 }
-
 h3 {
     color:#0072BC !important;
     font-weight: 600 !important;
@@ -155,36 +153,29 @@ h4>span {
     background-color: #0072BC !important;
     color: white !important;
 }
-
 .footer-link:hover {
     font-weight: bold;
 }
-
 .card-footer{
     display:inline-block !important;
     vertical-align: top !important;
 }
-
 .cust-img{
     max-height: 50%;
     max-width: 50%;
 }
-
 .cust-img2 {
     max-height: 30%;
     max-width: 30%;
 }
-
 .btn-pdf {
     padding-left: 25px;
 }
-
 .go-back {
     background-color: transparent !important;
     color: white !important;
     border-color: white !important;
 }
-
 .go-back:hover {
     background-color: white !important;
     color: #0072BC !important;
