@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Panagiotis Koilakos - MSc in Data Science - Machine Learning</title>
+      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+      <script src="./js.js" defer></script>
+      <meta name="description" property="og:description" content="Since a young boy, I had a passion to help people and chose to volunteer in order to support the people of this world, local communities, and the environment. Then studies in Informatics came along the way.
+         For quite some time I was wondering “How could I combine both of them?” Then it clicked! Working as a Senior Data Management Assistant at UNHCR made sense. So here I am, fulfilling my two passions by supporting the people that were forced to flee by using my experience in Informatics.">
+      <meta name="keywords" content="Portfolio, ePortfolio, Data Vizualization, Data Management, Data Science, Computer Science, Informatics, CV, Python, SQL">
+      <meta property="og:url" content="svestis.github.io">
+      <meta property="og:title" content="Panagiotis Koilakos - ePortfolio">
+      <meta property="og:type" content="profile">
+      <link rel="shortcut icon" href="https://img.icons8.com/small/344/user-male-circle.png">
+   </head>
+   <body>
+      <div>
+         <nav>
+            <ul class="nav nav-pills sticky-top justify-content-left">
+               <li class="nav-item">
+                  <a class="nav-link px-2" href="../index.html">Overview</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../work_experience.html">Work & Volunteer Experience</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MSc in Data Science
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="../msc.html">General</a></li>
+                     <li>
+                        <hr class="dropdown-divider">
+                     </li>
+                     <li><a class="dropdown-item" href="mod1.html">The Data Professional</a></li>
+                     <li><a class="dropdown-item" href="mod2.html">Numerical Analysis</a></li>
+                     <li><a class="dropdown-item" href="mod3.html">Deciphering Big Data</a></li>
+                     <li><a class="dropdown-item" href="mod4.html">Visualising Data</a></li>
+                     <li><a class="dropdown-item active " aria-current="page" href="#">Machine Learning</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../bsc.html">BSc in Informatics (Computer Science)</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../other.html">Other</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="heading">
+            <div class="container">
+               <h1 class="text-body-emphasis">Panagiotis Koilakos</h1>
+               <p class="lead">
+                  Associate Operational Data Management Officer, UNHCR
+               </p>
+               <div class="icons">
+                  <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
+                  <i class="fab fa-github zoom-icon"></i>
+                  </a>
+                  <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
+                  <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <h1 class="mt-4 mb-4">MSc in Data Science - Machine Learning</h1>
+      <h2 class="mt-4 mb-4">In general</h2>
+      <div class="accordion mx-3 mb-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button  id="contents" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               Contents
+               </button>
+            </h2>
+            <div  id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">
+                  1. <a href="#s1" rel="noopener noreferrer" class="hover-txt no-decor">The 4th Industrial Revolution</a><br>
+                  2. <a href="#s2" rel="noopener noreferrer" class="hover-txt no-decor">Legal and Ethical views on ANN applications</a><br>
+                  3. <a href="#s12" rel="noopener noreferrer" class="hover-txt no-decor">Summary of 1 and 2</a><br>
+                  4. <a href="#dp1" rel="noopener noreferrer" class="hover-txt no-decor">Team Development Project: Airbnb business analysis using data science approach</a><br>
+                  5. <a href="#dp2" rel="noopener noreferrer" class="hover-txt no-decor">Team Development Project: Neural network result presentation</a><br>
+                  6. <a href="#dp12" rel="noopener noreferrer" class="hover-txt no-decor">Team Development Projects: Team Exercises Outcome</a><br>
+                  7. <a href="#rp" rel="noopener noreferrer" class="hover-txt no-decor">Reflective Piece</a><br>
+                  8. <a href="#pdp" rel="noopener noreferrer" class="hover-txt no-decor">Personal Development Plan</a><br>
+                  9. <a href="#fr" rel="noopener noreferrer" class="hover-txt no-decor">Feautured Resources</a><br>
+               </div>
+            </div>
+            <br>
+            <p>&emsp;The team projects were a team effort. The team consisted by: Leigh, F., Van Toor, A., Koilakos, P.</p>
+         </div>
+      </div>
+      <h2 class="mt-4 mb-4" id="s1">The 4th Industrial Revolution</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <p class="card-text">&emsp;All industrial revolutions share the fact that they resulted in tremendous changes in people's lives and global economies. Moreover, starting from the first industrial revolution (use of coal) to the ongoing fourth industrial revolution (internet and renewable energy), it is apparent that the duration of those revolutions has been decreasing from one to another (Upkeep, no date). 
+                        However, their long-lasting effects paved the road for the subsequent industrial revolutions.<br><br>
+                        &emsp;The ongoing fourth industrial revolution progresses exponentially (Schwab, 2016), and it still needs to be determined when it will conclude. 
+                        The exponential growth rate translates to exponential benefits for humanity, but that comes with risks due to potential systems' failures.<br><br>
+                        &emsp;One such failure, revolving around the big data area of revolution 4.0, occurred early in the revolution's period (before 2014, 
+                        when the term revolution 4.0 was nearly non-existent) (McKinsey & Company, 2022), with the Google Flu Trends (GFT), a program aiming at nowcasting flu's prevalence based on people's 
+                        used search terms in Google search. Google was aiming to be able to forecast such an outbreak two weeks earlier than the US Centre for Disease Control and Prevention (CDC).<br><br>
+                        &emsp;The programme miss-forecasted the flu outbreak by 140 per cent, with the information system subsequently being discontinued (Lazer & Kennedy, 2015). 
+                        According to The Guardian (2014), the main points of failure have been the lack of continuous code-tweaking based on experience, miss-interpreting searches, 
+                        and mistakenly connecting them with flu-related incidents (e.g. the term 'fever' is not necessarily connected with the flu), the simultaneous roll-out of the autosuggest 
+                        feature which may mislead Google's users in using flu-related terms and the fact that correlation analysis turned into a causation analysis. One of the critical points of failure, 
+                        valid for all big-data projects, is that some areas can only be accurately analyzed with prior experience.<br><br>
+                        &emsp;In a nutshell, while the opportunities of revolution 4.0 are nowadays clear and significant steps have been made for the efficient use of related technologies which 
+                        will leverage its benefits for humanity, it is equally essential to be reminded about the risks of errors due to negligence which may result in taking wrong decisions affecting people's 
+                        lives (e.g. limitation in freedom of movement) and global economies.<br> 
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <div class="accordion mx-3 mb-3 mt-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               References
+               </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">Upkeep. (N.D.) What Are the 4 Industrial Revolutions?. Available from: <a target="_blank" href="https://www.upkeep.com/learning/four-industrial-revolutions/" rel="noopener noreferrer">https://www.upkeep.com/learning/four-industrial-revolutions/</a> [Accessed 1 July 2023].<br><br>
+                  Schwab, Klaus. (2016) The Fourth Industrial Revolution: what it means, how to respond. Available from: <a target="_blank" href="https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond//" rel="noopener noreferrer">https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/</a> [Accessed 1 July 2023].<br><br>
+                  McKinsey & Company. (2022) What are Industry 4.0, the Fourth Industrial Revolution, and 4IR?. Available from: <a target="_blank" href="https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-are-industry-4-0-the-fourth-industrial-revolution-and-4ir" rel="noopener noreferrer">https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-are-industry-4-0-the-fourth-industrial-revolution-and-4ir</a> [Accessed 1 July 2023]<br><br>
+                  Lazer, D. & Kennedy, R. (2015) What We Can Learn From the Epic Failure of Google Flu Trends. Available from: <a target="_blank" href="https://www.wired.com/2015/10/can-learn-epic-failure-google-flu-trends/" rel="noopener noreferrer">https://www.wired.com/2015/10/can-learn-epic-failure-google-flu-trends/</a> [Accessed 1 July 2023]<br><br>
+                  The Guardian. (2014) Google Flu Trends is no longer good at predicting flu, scientists find. Available from: <a target="_blank" href="https://www.theguardian.com/technology/2014/mar/27/google-flu-trends-predicting-flu" rel="noopener noreferrer">https://www.theguardian.com/technology/2014/mar/27/google-flu-trends-predicting-flu</a> [Accessed 1 July 2023]<br><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="s2">Legal and Ethical views on ANN applications</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <p class="card-text">&emsp;Artificial Intelligence (AI) as a concept is considered by many to have its roots in the mid-1950s, when, during the Dartmouth Summer 
+                        Research Project on Artificial Intelligence, a program that could mimic humans in problem-solving was presented (Anyoha, 2017). However, Artificial Intelligence 
+                        is considered a new term for the general public, which was introduced in our lives mainly with the groundbreaking release of GPT-3. Thus, the public is puzzled when 
+                        discussing the benefits and risks of such technology, with 37% of Americans being more concerned than excited, 18% being more excited than concerned, and the remaining 
+                        45% being equally concerned and excited (Rainie et al., 2022).<br><br>
+                        &emsp;Since the boom of AI, many risks have been identified and are re-iterated by many. 
+                        These include the lack of transparency (black box), induced bias and discrimination, security,
+                        ethical and privacy concerns, misinformation and legal and regulatory risks (Marr, 2023). Starting 
+                        with the lack of transparency, AI models such as GPT-3 and Microsoft's AI have refused to release their code or 
+                        training data, failing to provide insight into their code's mechanisms, thus lacking transparency (Hutson, 2021). Moreover, 
+                        with the 'right to privacy' being introduced increasingly in our daily lives, the limited transparency on AI, the lack of AI-specific security requirements, 
+                        and legislative & regulatory gaps, mainly deriving from the demanding and time-consuming policy-making process, may put people's right to secrecy and online security at risk 
+                        (Jia & Zhang, 2020; Perru & Uuk, 2019). Furthermore, bias and discrimination have been considered interconnected in the AI field. Bias and discrimination are often found in AI 
+                        models and they revolve around religion, gender and ethnicity and race (Hutson, 2021).<br><br>
+                        &emsp;Despite the negative aspects of AI technology, one cannot look the other way at the significant benefits that such technology already has and has the potential to introduce. 
+                        AI has already found many applications in finance, medicine, and sciences. Those fields can all benefit from AI applications such as automation, smart decision-making, research and 
+                        error reduction (Western Governors University, 2022). Many already benefit from finance-related AI applications like fraud detection and portfolio management. Other finance-related 
+                        AI applications involve automation, such as targeted financial recommendations, or efficiency improvement components, such as AI bots (Google, 2023). AI is also widely used in medicine 
+                        with automated tracing for high-risk patients, improvements in diagnosis speed and accuracy and finally by enhancing efficiency and thus allowing wider access to health care by allowing 
+                        professionals to work faster, without any tradeoff in accuracy and being able to reach more patients in a given day (Moore, 2023). AI involvement in sciences arguably provides long-term 
+                        advantages to people worldwide. Laboratory processes such as hypothesis and analysis can be significantly sped up, outcomes analysis can be automated and related literature and research 
+                        can be located within seconds (Data Science UA, N.D.).<br><br>
+                        &emsp;To summarize, the current advantages of AI and the potential enhancements in the years to come make such technology necessary for several disciplines. 
+                        Though, the leverage of AI does not come without related risks. Several improvements must take place to ultimately shift the public's opinion from negative or
+                        neutral to positive. These include the establishment of regulatory frameworks and technical measures that improve transparency, security, and one's right to privacy, 
+                        as well as steps to reduce and eliminate bias and discrimination. We may reach a point in time where we need to decide and differentiate between AIs that act as 'brainless mouths' 
+                        and AIs that act and behave as 'the people'.<br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <div class="accordion mx-3 mb-3 mt-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTr" aria-expanded="false" aria-controls="collapseTr">
+               References
+               </button>
+            </h2>
+            <div id="collapseTr" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">Anyoha, R. (2017) The History of Artificial Intelligence. Available from: <a target="_blank" href="https://sitn.hms.harvard.edu/flash/2017/history-artificial-intelligence/" rel="noopener noreferrer">https://sitn.hms.harvard.edu/flash/2017/history-artificial-intelligence/</a> [Accessed 17 July 2023]<br><br>
+                  Rainie, L., Funk, C., Anderson, M. & Tyson, Al. (2022) How Americans think about artificial intelligence. Available from: <a target="_blank" href="https://www.pewresearch.org/internet/2022/03/17/how-americans-think-about-artificial-intelligence/" rel="noopener noreferrer">https://www.pewresearch.org/internet/2022/03/17/how-americans-think-about-artificial-intelligence/</a> [Accessed 17 July 2023]<br><br>
+                  Marr, B. (2023) The 15 Biggest Risks Of Artificial Intelligence. Available from: <a target="_blank" href="https://www.forbes.com/sites/bernardmarr/2023/06/02/the-15-biggest-risks-of-artificial-intelligence/?sh=21ad93527066" rel="noopener noreferrer">https://www.forbes.com/sites/bernardmarr/2023/06/02/the-15-biggest-risks-of-artificial-intelligence/?sh=21ad93527066</a> [Accessed 17 July 2023]<br><br>
+                  Hutson, M. (2021) Robo-writers: the rise and risks of language-generating AI. Available from: <a target="_blank" href="https://www.nature.com/articles/d41586-021-00530-0" rel="noopener noreferrer">https://www.nature.com/articles/d41586-021-00530-0</a> [Accessed 17 July 2023]<br><br>
+                  Jia, K. & Zhang, N. (2020) Categorization and eccentricity of AI risks: a comparative study of the global AI guidelines. <i>Electron Markets</i> 32: 59–71. DOI: <a target="_blank" href="https://doi.org/10.1007/s12525-021-00480-5" rel="noopener noreferrer">https://doi.org/10.1007/s12525-021-00480-5</a><br><br>
+                  Perru, B. & Uuk, R. (2019) AI Governance and the Policy-making Process: Key Considerations for Reducing AI Risk. <i>Big Data Cognitive Computing</i> 3(2): 26. DOI: <a target="_blank" href="https://doi.org/10.3390/bdcc3020026" rel="noopener noreferrer">https://doi.org/10.3390/bdcc3020026</a>
+                  Western Governors University. (2022) All the Benefits of Artificial Intelligence. Available from: <a target="_blank" href="https://www.wgu.edu/blog/benefits-artificial-intelligence2204.html#close" rel="noopener noreferrer">https://www.wgu.edu/blog/benefits-artificial-intelligence2204.html#close</a> [Accessed 17 July 2023]<br><br>
+                  Google. (2023) What is artificial intelligence (AI) in finance?. Available from: <a target="_blank" href="https://cloud.google.com/discover/finance-ai" rel="noopener noreferrer">https://cloud.google.com/discover/finance-ai</a> [Accessed 17 July 2023]<br><br>
+                  Moore, J. (2023) AI in health care: the risks and benefits. Available from: <a target="_blank" href="https://www.medicaleconomics.com/view/ai-in-health-care-the-risks-and-benefits" rel="noopener noreferrer">https://www.medicaleconomics.com/view/ai-in-health-care-the-risks-and-benefits</a> [Accessed 17 July 2023]<br><br>
+                  Data Science UA. (N.D.) Artificial Intelligence in Science. Available from: <a target="_blank" href="https://data-science-ua.com/industries/artificial-intelligence-in-science/" rel="noopener noreferrer">https://data-science-ua.com/industries/artificial-intelligence-in-science/</a> [Access 17 July 2023]<br><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="s12">Summary of 1 and 2</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <p class="card-text">&emsp;In summary, technological advancements such as Artificial Intelligence (AI) 
+                        and Machine Learning (ML) have been increasingly rapid in recent years. Experts estimate that there is 
+                        a 90% chance that human-level artificial intelligence will exist sometime in the next 100 years (Roser, 2023). 
+                        With the AI market expected to reach 407 billion by 2027 (Haan & Watts, 2023), it is apparent that both concepts,
+                        their present applications, as well as the constantly developing proof-of-concept for evolving applications,
+                        will bring value and change in the global economies from the Finance discipline all the way to Healtcare,
+                        and at the same time improve people's lives. At the same time, such applications should consider the present
+                        risks and limitations carefully. Despite the size of the AI field, the applicable regulatory framework is 
+                        sparse, at best, with the EU adopting a proposal on AI liability only in late 2022 (European Commission, 2022).<br><br>
+                        &emsp;Moreover, potential errors in the usage, coding or interpretation of the outcomes of such technologies 
+                        can pose a significant danger to people's rights, with two examples being the misestimation of flu's development
+                        by 140% by Google (The Guardian, 2014) and the ongoing discussions on the defamation lawsuits against 
+                        OpenAI (Cahill, 2023). Finally, AI applications have been previously accused of discrimination and bias,
+                        mainly related to religion, gender, ethnicity, and race (Ohlheiser, 2023). Even though there are significant
+                        benefits to be gained through AI, there are also risks and challenges that need to be addressed. Balancing
+                        the equities and achieving a balance between leveraging technology for positive outcomes and mitigating 
+                        potential negative consequences is more crucial than ever and is expected to be even more crucial in the
+                        years to come.<br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <div class="accordion mx-3 mb-3 mt-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapses12" aria-expanded="false" aria-controls="collapses12">
+               References
+               </button>
+            </h2>
+            <div id="collapses12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion">Roser, M. (2023) Here's how experts see AI developing over the coming years. Available from: <a target="_blank" href="https://www.weforum.org/agenda/2023/02/experts-ai-developing-over-the-coming-years" rel="noopener noreferrer">https://www.weforum.org/agenda/2023/02/experts-ai-developing-over-the-coming-years</a> [Accessed 22 July 2023]<br><br>
+                  Haan, K. & Watts, R. (2023) 24 Top AI Statistics And Trends In 2023. Available from: <a target="_blank" href="https://www.forbes.com/advisor/business/ai-statistics/" rel="noopener noreferrer">https://www.forbes.com/advisor/business/ai-statistics/</a> [Accessed 22 July 2023]<br><br>
+                  European Commission. (2023) Regulatory framework proposal on artificial intelligence. Available from: <a target="_blank" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" rel="noopener noreferrer">https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai</a> [Accessed 22 July 2023]<br><br>
+                  Cahill, R. (2023) OpenAI Defamation Lawsuit: The first of its kind. Available from: <a target="_blank" href="https://lawreview.syr.edu/openai-defamation-lawsuit-the-first-of-its-kind/" rel="noopener noreferrer">https://lawreview.syr.edu/openai-defamation-lawsuit-the-first-of-its-kind/</a> [Accessed 22 July 2023]<br><br>
+                  Ohlheiser, A. (2023) AI automated discrimination. Here's how to spot it. Available from: <a target="_blank" href="https://www.vox.com/technology/23738987/racism-ai-automated-bias-discrimination-algorithm" rel="noopener noreferrer">https://www.vox.com/technology/23738987/racism-ai-automated-bias-discrimination-algorithm</a> [Accessed 22 July 2023]<br><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="dp1">Development Project: Airbnb business analysis using data science approach</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <p class="card-text"><b>Abstract</b><br><br>
+                        &emsp;This report has identified a distinct area of potential increased revenue for Airbnb in New York, namely Queens. This was managed through data analysis and applying machine learning techniques such as clustering.<br><br>
+                        &emsp;The recommendations are therefore that Airbnb invests its resources there with a particular focus on ‘Entire home/apt’ listings due to the promising returns these types of listings can offer, leading to a considerable increase in revenue.<br><br>
+                        &emsp;Finally, to gain a deeper understanding of the differences between these neighbourhoods, Airbnb can pay attention to answering the following question: <i>Why is Queens currently relatively underpopulated in terms of Airbnb?</i><br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="btn-pdf d-grid gap-3 mb-4 d-md-block">
+         <a href="/assets/mod5/Airbnb business analysis report.pdf" target="_blank" type="button" class="btn btn-primary icon-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+               <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+            </svg>
+            View in new page
+         </a>
+         <a href="/assets/mod5/Airbnb business analysis report.pdf" download="Airbnb Business Analysis Report" style="--bs-icon-link-transform: translate3d(0, 0.20rem, 0);" type="button" class="btn btn-primary icon-link icon-link-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+               <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"></path>
+            </svg>
+            Download and View PDF file
+         </a>
+         <a href="/assets/mod5/Reduced EDA for report.ipynb" target="_blank" type="button"  style="--bs-icon-link-transform: translate3d(0, 0.20rem, 0);" class="btn btn-primary icon-link icon-link-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-py" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
+            </svg>
+            Download code
+         </a>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="dp2">Development Project: Neural network result presentation</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <p class="card-text"><b>Abstract</b><br><br>
+                        &emsp;We were really pleased to get an <b>accuracy score of 82.44%</b> against the validation set after 39 epochs, 
+                        with a loss of 0.53. The loss and accuracy charts show a clear levelling-off but no marked downturn in performance.
+                        Most importantly, when the model was finally tested on the unseen test data set it achieved an accuracy score of 82.08%,
+                        so it was performing very consistently. The confusion matrix of the test results shows how well 
+                        it matched each class individually. We can see that most classes scored very well, with ship being the best. 
+                        The worst by some margin was cat, which was incorrectly matched with dog more than any other class.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="btn-pdf d-grid gap-3 mb-4 d-md-block">
+         <a href="mod5project2.html" type="button" class="btn btn-primary icon-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-plus" viewBox="0 0 16 16">
+               <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+               <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2V4Zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2Z"/>
+               <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+            </svg>
+            View embedded
+         </a>
+         <a href="/assets/mod5/Neural network object recognition presentation.pdf" target="_blank" type="button" class="btn btn-primary icon-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+               <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+            </svg>
+            View in new page
+         </a>
+         <a href="/assets/mod5/Neural network object recognition presentation.pptx" download="Executive Summary" style="--bs-icon-link-transform: translate3d(0, 0.20rem, 0);" type="button" class="btn btn-primary icon-link icon-link-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+               <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"></path>
+            </svg>
+            Download and View PPT file
+         </a>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="dp12">Development Project: Team Exercises Outcome</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <p class="card-text">&emsp;Both team exercises were very beneficial for personal development purposes. 
+                        The exercises build on business analysis, Exploratory Data Analysis (EDA) to support the identified 
+                        business question and technical knowledge while supporting those above by respective reports and teamwork.<br><br>
+                        &emsp;Generally speaking, business analysis supports organisations in connecting the management and technical 
+                        layers in order to bring improvement. Both projects concentrated on identifying business problems by analysing 
+                        the needs and later determining solutions to those problems.<br><br>
+                        &emsp;Moreover, the business analysis had to be coupled with EDA and supported by a more 
+                        extensive EDA to visualise, summarise and interpret the given information. EDA also supported 
+                        in data cleansing, better understanding the data's characteristics and contents, and verifying or rejecting assumptions.<br><br>
+                        &emsp;Additionally, both exercises' technical components were needed to 
+                        support and conclude the findings. Code was used to cleanse, present and analyse 
+                        data, identify patterns, create machine learning models, and ultimately make data-informed decisions.<br><br>
+                        &emsp;Finally, the team format of those projects helped us develop and exercise several 
+                        skills essential for academic success and real-life professional environments. Skills such 
+                        as knowledge sharing, time and workload management, and self-reflection are invaluable in 
+                        promoting mutual learning and contributing to personal development.<br><br>
+                        &emsp;To summarise, both team exercises allowed us to understand the suitability 
+                        and applicability of our theoretical knowledge while implementing and evaluating
+                        our technical implementations to practical scenarios, topped up with the teamwork 
+                        component that gave us the valuable opportunity to practise, develop and utilise the skills
+                        that are required to be an influential member of a team.<br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="rp">Reflective Piece</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <p class="card-text">&emsp;Reflecting on completing this machine learning module, I feel like 
+                        I have gained a significant range and depth of knowledge and skills from the theoretical as
+                        well as the practical and technical components of this module.<br><br>
+                        &emsp;Starting with the theoretical components, I have studied and gained an understanding of
+                        machine learning's core algorithms and their mathematical foundations. Such knowledge is necessary
+                        to comprehend why we do certain things, apart from performing the tasks mindlessly. Complementary 
+                        to that, I was exposed to data analytics, and I got to understand the role of data in developing machine learning models.<br><br>
+                        &emsp;The module knowledge was not isolated to a theoretical understanding, and the experience of applying 
+                        machine-learning techniques to real-world problems through the module's several requirements for project 
+                        implementation was a key takeaway for me. Throughout the module, I had the opportunity to actively use 
+                        Python in real-world data, which was an invaluable experience and helped me bridge the gap between theory
+                        and practice, which is my primary learning outcome goal.<br><br>
+                        &emsp;Moreover, through the theoretical understanding and hands-on practice, 
+                        I realised the relevance and applicability of machine learning in addressing 
+                        complex problems and its usage potential across numerous sectors, as well as in an interdisciplinary context. 
+                        Throughout this module, broader considerations involved in machine learning were also discussed. I learned to 
+                        research, describe and consider the legal, social, ethical, and professional issues that can arise in the machine 
+                        learning field during project implementation. It was also particularly insightful to explore the applicability and 
+                        challenges associated with different datasets and understand how these factors can influence the effectiveness of
+                        machine learning algorithms.<br><br>
+                        &emsp;Finally, the module offered experience-gain in team dynamics and teamwork through team exercises. 
+                        It enhanced my ability to function effectively and efficiently as part of a web-based team, giving me insights 
+                        into the importance of collaboration and communication in achieving shared organisational goals.<br><br>
+                        &emsp;Notwithstanding the valuable knowledge I gained, I realised that further study of the field would be needed to
+                        achieve sufficient expertise. Further experience-gaining will boost my confidence while applying the acquired
+                        knowledge in real-life applications.<br><br>
+                        &emsp;In conclusion, this module has equipped me with a vital understanding of machine learning and helped
+                        me gain practical data analytics skills while acquiring awareness of the broader issues surrounding machine
+                        learning applications. Reflecting on my learning journey, I feel well-prepared to broaden my knowledge with
+                        more complex concepts and hopefully apply these skills and knowledge in my day-to-day work.<br>                      
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="pdp">Personal Development Plan</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <div class="justify-content-center text-center">
+                        <img src="/assets/mod5/pdp.png" alt="Personal Development Plan" class="img-fluid">
+                     </div>
+                     <br>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="btn btn-outline-primary pl-3" href="#contents" role="button">Back to contents</a>
+      <hr class="rounded" style="width: 50%; margin:auto">
+      <h2 class="mt-4 mb-4" id="fr">Feautured Resources</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-2 row-cols-md-2 mb-3 mx-5 text-center">
+            <div class="col">
+               <a class="no-decor" href="https://www.nature.com/articles/d41586-021-00530-0" target="_blank" rel="noopener noreferrer">
+                  <div class="card h-100 w-100 zoom-card gr shadow-sm">
+                     <div class="card-body">
+                        <h5 class="card-title">Robo-writers: the rise and risks of language-generating AI</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Article</h6>
+                     </div>
+                     <figure>
+                        <img src="/assets/mod5/d41586-021-00530-0_18901924.webp" alt="Robowriters" width="340">
+                     </figure>
+                     <div class="card-footer">Hutson Matthew</div>
+                  </div>
+               </a>
+            </div>
+            <div class="col">
+               <a class="no-decor" href="https://www.nature.com/articles/d41586-021-00530-0" target="_blank" rel="noopener noreferrer">
+                  <div class="card h-100 w-100 zoom-card gr shadow-sm">
+                     <div class="card-body">
+                        <h5 class="card-title">CNN Explainer: Learn Convolutional Neural Network<br></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Article</h6>
+                     </div>
+                     <figure>
+                        <img src="/assets/mod5/CNNexplain.png" alt="bigdata" width="600">
+                     </figure>
+                     <div class="card-footer">Zijie J. Wang, Robert Turko, Omar Shaikh, Haekyu Park, Nilaksh Das, Fred Hohman, Minsuk Kahng, Duen Horng Chau</div>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <footer class="py-3 my-4">
+         <ul class="nav justify-content-center">
+            <li class="nav-item">
+               <a href="#" class="icon-link icon-link-hover"
+                  style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0);">
+                  Back to top
+                  <svg class="bi bi-arrow-up" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+         <p class="text-center">© 2023 Panagiotis KOILAKOS</p>
+      </footer>
+   </body>
+</html>
