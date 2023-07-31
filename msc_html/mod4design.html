@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Panagiotis Koilakos - MSc in Data Science - Visualising Data</title>
+      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+      <script src="./js.js" defer></script>
+      <meta name="description" property="og:description" content="Since a young boy, I had a passion to help people and chose to volunteer in order to support the people of this world, local communities, and the environment. Then studies in Informatics came along the way.
+         For quite some time I was wondering “How could I combine both of them?” Then it clicked! Working as a Senior Data Management Assistant at UNHCR made sense. So here I am, fulfilling my two passions by supporting the people that were forced to flee by using my experience in Informatics.">
+      <meta name="keywords" content="Portfolio, ePortfolio, Data Vizualization, Data Management, Data Science, Computer Science, Informatics, CV, Python, SQL">
+      <meta property="og:url" content="svestis.github.io">
+      <meta property="og:title" content="Panagiotis Koilakos - ePortfolio">
+      <meta property="og:type" content="profile">
+      <link rel="shortcut icon" href="https://img.icons8.com/small/344/user-male-circle.png">
+   </head>
+   <body>
+      <div class="heading">
+         <div class="container">
+            <h1 class="text-body-emphasis">Panagiotis Koilakos</h1>
+            <p class="lead">
+               Associate Operational Data Management Officer, UNHCR
+            </p>
+            <div class="icons">
+               <a class="icon" target="_blank" href="https://www.linkedin.com/in/panagiotisikoilakos/" rel="noopener noreferrer">
+               <i class="fab fa-linkedin zoom-icon"></i>
+               </a>
+               <a class="icon" target="_blank" href="https://github.com/Svestis" rel="noopener noreferrer">
+               <i class="fab fa-github zoom-icon"></i>
+               </a>
+               <a class="icon" target="_blank" href="https://www.fire.gr/?cat=337" rel="noopener noreferrer">
+               <i class="fa fa fa-fire-extinguisher zoom-icon"></i>
+               </a>
+            </div>
+            <a href="mod4.html#dashboard" type="button" class="btn btn-primary icon-link go-back border-1 icon-link icon-link-hover mb-3 mt-4" style="--bs-icon-link-transform: translate3d(-0.25rem, 0, 0);">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+               </svg>
+               Go back
+            </a>
+         </div>
+      </div>
+      <h1 class="mt-4 mb-4">MSc in Data Science - Visualising Data</h1>
+      <h2 class="mt-4 mb-4">Dashboard Design</h2>
+      <div class="container-fluid">
+         <div class="row row-cols-1 row-cols-md-1 mb-3 mx-1 text-center">
+            <div class="col">
+               <div class="card shadow-sm text-start">
+                  <div class="card-body">
+                     <div class="justify-content-center">
+                     <p class="card-text">&emsp;Dashboards, generally speaking, provide a user interface that visually organises and presents complex data in a way that is easy to study, 
+                        comprehend, and analyse. Often, they are connected with real-time data sources, something that makes them interactive, thus, enabling users to access, analyse, and organise 
+                        information in real-time through a snapshot of key performance indicators (KPIs), metrics, or other domain-specific data points. They are widely used across different sectors 
+                        to provide strategic insights, facilitate decision-making, or monitor the performance of organisations, with the business intelligence domain often leveraging their power to 
+                        aggregate and analyse large volumes of data and then present the results in a meaningful and user-friendly way. A dashboard aims to turn raw data into actionable information by 
+                        making it accessible and easily digestible. It enables users to make informed decisions faster and more accurately, improving operational efficiency and productivity (Tableau, N.D.). 
+                        Careful consideration regarding the target audience and their design, in terms of format, colours, visualisations, and usability, is fundamental to achieving the designer's objectives.<br><br>
+                        &emsp;The dataset is the element on which dashboards are based. Our dataset contains the number of Refugees, Asylum Seekers and Other Affected people, disaggregated by country of origin, 
+                        country of asylum (or habitual residence), sex and age cohort. Prior to starting our dashboard design, we considered our target audience and the dashboard's business purpose. Our data 
+                        is primarily constituted of high-level data on affected populations. In that sense, the dashboard's goal is to provide a quick historical summary of main displacement metrics, which can be
+                        helpful to humanitarians and policymakers, usually people that "have just 10 seconds".<br><br>
+                        &emsp;With the personas above in mind, which do not necessarily have the desire or the skill to dig deeper into the provided data, simplicity, clarity, ease of use, and elegance were the primary concerns. 
+                        For this purpose, we carefully selected the contained visuals, ensuring consistency between them with clear data labels, titles and footnotes. After carefully considering what we wanted to show for each data 
+                        point, we decided on the final visuals used. The visuals set consisted of a simple automated summary text, flashcards - typically used to quickly display simple data points - containing plain high-level numbers,
+                         and line graphs, used to show and compare changes and trends over time (Cisneros, 2020). Clustered bar graphs were also utilised to show the comparison among items and categories being further split into groups,
+                          along with a population graph, being a bar graph with an offset (IBM, 2021). Finally, an area chart was utilised to show the "share" (composition) of each of the displayed values in the overall population 
+                          (Muth, 2018), and a map to provide information about the "clustering" and quantitative comparison of people based on their country of habitual residence or origin (Ricks, 2021).<br><br>
+                        &emsp;Another point of concern was ensuring that the data and visuals were quickly digestible based on their placement in the dashboard, the colours used, and the sizing. Regarding the placement, 
+                        the dashboard's format uses standard left-to-right and top-to-bottom navigation, moving from an overview to more details. Very high-level data and a short text summary are on the left-hand side of the dashboard,
+                         taking advantage of the "guiding by contrast" principle and using a different background colour to differentiate from the rest of the report. More generic data are on the top of the dashboard, providing a
+                          historical comparison of high-level data points. Moving further down in the dashboard, the comparisons bring into the equation additional elements such as the sex and the age cohort. Boxes and lines as
+                           separators have also been utilised (Alberts, 2017; Gawarska-Tywonek, 2021). We also considered the utilisation of white space, the fonts and text sizes used, and the dimensions of the visuals. We ensured
+                            consistency between the elements in the dashboard (e.g. all labels of visuals using the same font with the same text size). For this reason, we used a custom theme to auto-assign the default font and size
+                             and the default colour palette to ensure consistency.<br><br>
+                        &emsp;As mentioned before, the colours used have been imported into the dashboard through a custom theme to ensure that we are using colours consistently. When compared to the dashboard's background,
+                         high-contrast colours have been used to comply with the  Web Content Accessibility Guidelines (WCAG) Framework, which recommends a threshold of contrast of 4.5:1 and above. The colours used have been 
+                         imported from UNHCR's (the lead United Nations Agency for Refugees and Asylum Seekers) Data Visualization Guidelines. As the colour palette was created by experts in the refugee and information management
+                          field, apart from WCAG compliance, we also aim to achieve brand conformance and compliance by using colours that the institutionally responsible organisation recommends.<br><br>
+                        &emsp;Finally, the dashboard uses tooltips, drill-through and drill-down options to support more detailed presentation and information provision. Tooltips, where enabled, strengthen information provision by 
+                        providing additional data points and context-specific information. Similarly, drill-through and drill-down options allow users to view more detailed information on a visual or switch data points in the same 
+                        graphic. As an example, in our dashboard, drill-through is used to allow users to see information per country of origin or country of habitual residence or country of origin grouped by country of habitual 
+                        residence.<br><br>
+                        &emsp;In conclusion, the development of our dashboard was carefully planned with a keen focus on our target audience. Our primary aim was to simplify complex data and present it in a
+                         clear, comprehendible and elegant way that enables rapid and informed decision-making. To this end, we adopted various types of visuals, ensuring their design and use consistency. Careful
+                          consideration was also given to the visualisation's placement, sizing, and colour. Furthermore, adherence to WCAG's guidelines was prioritised by leveraging available practices and the UNHCR's
+                           Data Visualization Guidelines to ensure accessibility and brand conformance. Using tooltips and drill-through options further boosted the user's ability to interact with and understand the data more
+                            detailedly. Ultimately, our dashboard offers a well-planned and materialised interface that transforms high-level data into a visual narrative, equipping users with the critical insights needed.
+                        <br><br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="accordion mx-3 mb-3 mt-3">
+         <div class="accordion-item">
+            <h2 class="accordion-header">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+               References
+               </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+               <div class="accordion-body module1accordion"><br>
+                  Tableau. (N.D.) What is a dashboard? A complete overview. Available from: <a target="_blank" href="https://www.tableau.com/learn/articles/dashboards/what-is" rel="noopener noreferrer">https://www.tableau.com/learn/articles/dashboards/what-is</a> [Accessed 27 July 2023]<br><br>
+                  Alberts, A. (2017) Eye-tracking study: 5 key learnings for data designers everywhere. Available from: <a target="_blank" href="https://www.tableau.com/blog/eye-tracking-study-5-key-learnings-data-designers-everywhere-72395" rel="noopener noreferrer">https://www.tableau.com/blog/eye-tracking-study-5-key-learnings-data-designers-everywhere-72395</a> [Accessed 27 July 2023]<br><br>
+                  Cisneros, M. (2020) what is a line graph?. Available from: <a target="_blank" href="https://www.storytellingwithdata.com/blog/2020/3/24/what-is-a-line-graph" rel="noopener noreferrer">https://www.storytellingwithdata.com/blog/2020/3/24/what-is-a-line-graph</a> [Accessed 27 July 2023]<br><br>
+                  IBM. (2021) Clustered bar chart data settings. Available from: <a target="_blank" href="https://www.ibm.com/docs/en/jfsm/1.1.2.1?topic=charts-clustered-bar-chart-data-settings" rel="noopener noreferrer">https://www.ibm.com/docs/en/jfsm/1.1.2.1?topic=charts-clustered-bar-chart-data-settings</a> [Accessed 27 July 2023]<br><br>
+                  Muth, L. (2018) What to consider when creating area charts. Available from: <a target="_blank" href="https://blog.datawrapper.de/area-charts/" rel="noopener noreferrer">https://blog.datawrapper.de/area-charts/</a> [Accessed 27 July 2023]<br><br>
+                  Ricks, E. (2021) maps!. Available from: <a target="_blank" href="https://www.storytellingwithdata.com/blog/2021/4/28/maps" rel="noopener noreferrer">https://www.storytellingwithdata.com/blog/2021/4/28/maps</a> [Accessed 27 July 2023]<br><br>
+                  Gawarska-Tywonek, W. (2021) Learn these 10 design principles to take your dashboards to the next level. Available from: <a target="_blank" href="https://medium.com/analytics-vidhya/10-design-principles-2c5860810534" rel="noopener noreferrer">https://medium.com/analytics-vidhya/10-design-principles-2c5860810534</a> [Accessed 27 July 2023]<br><br>
+                  W3C. (N.D.) WCAG 2 Overview. Available from: <a target="_blank" href="https://www.w3.org/WAI/standards-guidelines/wcag/" rel="noopener noreferrer">https://www.w3.org/WAI/standards-guidelines/wcag/</a> [Accessed 27 July 2023]<br><br>
+                  UNHCR. (2023) Data visualisation platform. Available from: <a target="_blank" href="https://dataviz.unhcr.org/" rel="noopener noreferrer">https://dataviz.unhcr.org/</a> [Accessed 27 July 2023]<br><br>
+                  Tableau. (2021) 10 Best Practices for Building Effective Dashboards. Available from: <a target="_blank" href="https://www.tableau.com/sites/default/files/2021-09/10%20Best%20Practices%20for%20Building%20Effective%20DashboardsWP.pdf" rel="noopener noreferrer">https://www.tableau.com/sites/default/files/2021-09/10%20Best%20Practices%20for%20Building%20Effective%20DashboardsWP.pdf</a> [Accessed 27 July 2023]<br><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="py-3 my-4">
+         <ul class="nav justify-content-center">
+            <li class="nav-item">
+               <a href="#" class="icon-link icon-link-hover"
+                  style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0);">
+                  Back to top
+                  <svg class="bi bi-arrow-up" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+         <p class="text-center">© 2023 Panagiotis KOILAKOS</p>
+      </footer>
+   </body>
+</html>
